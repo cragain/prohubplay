@@ -1,10 +1,13 @@
 class ClientsController < ApplicationController
-  def documents
+ 
+ 
+  def new
+    @client = Client.new
   end
-
-  def tasks
+  
+  def create
   end
-
-  def calendar
-  end
+  
+  
+  
 end

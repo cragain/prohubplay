@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root 'dashboard#index'
+  resources :clients
+  
   get 'calendar/index'
 
   get 'tasks/index'
