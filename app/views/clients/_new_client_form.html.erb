@@ -1,0 +1,6 @@
+<%= simple_form_for @user do |f| %>
+  <%= f.input :client_name %>
+  <%= f.input :business_name %>
+  <%= f.input :business_type, collection: s-corp, partnership, sole proprietor %>
+  <%= f.button :submit %>
+<% end %>

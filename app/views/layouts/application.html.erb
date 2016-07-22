@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ProHub 360</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/prohub-html.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico">
+  <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
+  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="header-section"><%= image_tag "New_PH360.png", height: '62', width: '200' %>
+    <div class="search-div"></div>
+    <div class="client-dropdown">
+      <div class="dropdown-parent w-dropdown" data-delay="0">
+        <div class="w-dropdown-toggle">
+          <div class="dropdown-text">Select Client</div>
+          <div class="dropdown-icon w-icon-dropdown-toggle"></div>
+        </div>
+        <nav class="w-dropdown-list"><a class="w-dropdown-link" href="#">Link 1</a><a class="w-dropdown-link" href="#">Link 2</a><a class="w-dropdown-link" href="#">Link 3</a>
+        </nav>
+      </div>
+    </div>
+    <div class="header-icon-div">
+      <a class="header-icon-link-block w-inline-block" href="#"><%= image_tag "Message Filled-50.png", width: '25' %><%= image_tag "Sort Down-48.png", width: '24' %>
+      </a>
+      <a class="header-icon-link-block w-inline-block" href="#"><%= image_tag "High Connection-52.png", width: '25' %><%= image_tag "Sort Down-48.png", width: '24' %>
+      </a>
+      <a class="header-icon-link-block w-inline-block" href="#"><%= image_tag "Appointment Reminders-48.png", width: '25' %><%= image_tag "Sort Down-48.png", width: '24' %>
+      </a>
+      <a class="header-icon-link-block w-inline-block" href="#"><%= image_tag "Contacts-52.png", width: '25' %><%= image_tag "Sort Down-48.png", width: '24' %>
+      </a>
+    </div>
+  </div>
+  <div class="flex-parent">
+    <div class="side-nav-div">
+      <div>
+        <%= image_tag "1.jpg", width: '200', height: '150' %>
+      </div>
+      <div class="nav-button-wrapper">
+        <div class="owner-info-div">
+          <h4 class="owner-info-nav">Christopher G. Ragain, CPA</h4>
+          <h4 class="company owner-info-nav">Ragain Financial Inc.</h4>
+        </div>
+        <div class="nav-button">
+          <%= link_to "Dashboard", dashboard_index_path, class: "nav-title" %>
+        </div>
+        <div class="nav-button">
+          <%= link_to "Clients", clients_index_path, class: "nav-title" %>
+        </div>
+        <div class="nav-button">
+          <%= link_to "Documents", documents_index_path, class: "nav-title" %>
+        </div>
+        <div class="nav-button">
+          <%= link_to "Tasks", tasks_index_path, class: "nav-title" %>
+        </div>
+        <div class="last nav-button">
+          <%= link_to "Calendar", calendar_index_path, class: "nav-title" %>
+        </div>
+      </div>
+    </div>
+    <div class="body-div">
+      <%= yield %>
+    </div>
+  </div>
+
+
+
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+</body>
+</html>
