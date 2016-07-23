@@ -1,16 +1,21 @@
 <div class="row">
-  <h2>Clients</h2>
-   _new_client_form.html.erb
+  <div class="col-xs-12 col-sm-6 col-md-10">
+    <h2>Clients</h2>
+  </div>
+  
+    <%= link_to "New Client", new_client_path, class: "btn btn-primary" %>
+  
 </div>
-<div class="row">
+
   <div class="well-trans">
     <table class="table">
       <tr>
-        <td>Darth Vader</td>
-        <td>Vader Enterprises</td>
-        <td>Payroll Run</td>
-        <td>08.12.16</td>
-      </td>
+        <% @clients.each do |client| %>
+          <tr>
+            <td><%= client.client_name %></td>
+            <td><%= client.business_name %></td>
+            <td><%= client.business_type %></td>
+          </tr>
+        <% end %>
     </table>
   </div>    
-</div>

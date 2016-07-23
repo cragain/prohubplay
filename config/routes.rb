@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :clients
   
   get 'calendar/index'
+  get 'clients/new'
 
   get 'tasks/index'
 
