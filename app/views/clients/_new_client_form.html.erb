@@ -1,6 +1,9 @@
 <%= simple_form_for @client do |f| %>
   <%= f.input :client_name %>
   <%= f.input :business_name %>
-  <%= f.input :business_type %>
+  <%= f.input :business_type, :collection => ['S-corp', 'Partnership', 'Sole Proprietor'] %>
+  <%= f.input :bookkeeping_schedule, :collection => ['Weekly', 'Monthly', 'Quarterly'] %>
+  <%= f.input :payroll_schedule, :collection => ['Weekly', 'Bi-weekly', 'Monthly', 'Quarterly'] %>
+  <%= f.input :tax_projected %>
   <%= f.button :submit %>
 <% end %>

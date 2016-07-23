@@ -11,14 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160722214420) do
+ActiveRecord::Schema.define(version: 20160723153631) do
 
   create_table "clients", force: :cascade do |t|
     t.string   "client_name"
     t.string   "business_name"
     t.string   "business_type"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.string   "bookkeeping_schedule"
+    t.string   "payroll_schedule"
+    t.integer  "tax_projected"
+    t.integer  "number_of_returns"
   end
 
 end

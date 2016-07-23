@@ -2,20 +2,30 @@
   <div class="col-xs-12 col-sm-6 col-md-10">
     <h2>Clients</h2>
   </div>
-  
-    <%= link_to "New Client", new_client_path, class: "btn btn-primary" %>
-  
+  <%= link_to "New Client", new_client_path, class: "btn btn-primary" %>
 </div>
 
-  <div class="well-trans">
-    <table class="table">
+<div class="well-trans">
+  <table class="table table-hover">
+    <thead>
       <tr>
-        <% @clients.each do |client| %>
-          <tr>
-            <td><%= client.client_name %></td>
-            <td><%= client.business_name %></td>
-            <td><%= client.business_type %></td>
-          </tr>
-        <% end %>
-    </table>
-  </div>    
+        <td><strong>Client Name</strong></td>
+        <td><strong>Business Name</strong></td>
+        <td><strong>Business Type</strong></td>
+        <td><strong>Bookkeeping Schedule</strong></td>
+        <td><strong>Payroll Schedule</strong></td>
+        <td><strong>Tax Projected</strong></td>
+      </tr>
+    </thead>
+    <% @clients.each do |client| %>
+      <tr>
+        <td><%= link_to client.client_name, client %></td>
+        <td><%= client.business_name %></td>
+        <td><%= client.business_type %></td>
+        <td><%= client.bookkeeping_schedule %></td>
+        <td><%= client.payroll_schedule %></td>
+        <td>$<%= client.tax_projected %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>    
