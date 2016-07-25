@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row row-under">
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
-      <h2>Client Detail</h2>
+      <h2><%=@client.client_name %> | <%= @client.business_name %></h2>
     </div>
     <div class="col xs-12 col-sm-9 col-md-6 col-lg-4">
     <%= link_to "Client List", clients_path, class: "btn btn-primary" %>
@@ -20,19 +20,27 @@
         <div class="col-md-6">
           <div class="col-md-4">
             <h5>Client Name:</h5>
+            <h5>Address:</h5>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-8">
             <h5><%= @client.client_name %></h5>
+            <h6><%= @client.street_address %></h6>
+            <h6><%= @client.street_address_2 %></h6>
+            <h6><%= @client.city %> <%= @client.state %> <%= @client.zip %></h6>
           </div>
         </div> 
         <div class="col-md-6">
           <div class="col-md-6">
             <h5>Business Name:</h5>
             <h5>Business Type:</h5>
+            <h5>Email Address:</h5>
+            <h5>Telephone Number:</h5>
           </div>
           <div class="col-md-6">
             <h5><%= @client.business_name %></h5>
             <h5><%= @client.business_type %></h5>
+            <h6>luke@skywalkertutors.com</h6>
+            <h6>222.456.7896</h6>
           </div>
         </div>
       </div>
@@ -41,7 +49,7 @@
   <div class="col-xs-12 col-sm-12 col-med-6 col-lg-6">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">Recent Emails</h3>
+        <h3 class="panel-title">Upcoming Tasks</h3>
       </div>
       <div class="panel-body">
         
@@ -66,13 +74,7 @@
         <div class="col-md-6">
           <h4><%= @client.bookkeeping_schedule %></h4>
           <h4><font color="#3291B5"><%= @client.payroll_schedule %></font></h4>
-          <h4><% if @client.business_type == 'Sole Proprietor' %>
-                Sole Proprietor | Schedlue C
-              <% elsif @client.business_type.downcase == 'partnership' %>
-                Partnership | Form 1065
-              <% else %>
-                S-corporation | Form 1120S
-              <% end %></h4>
+          <h4><%= @client.return_type %></h4>
               <!--Client Detail Dropdowns-->
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Business Tax Return Status<span class="caret"></span></button>
@@ -100,7 +102,9 @@
         <h3 class="panel-title">Tax Planner</h3>
       </div>
       <div class="panel-body">
-        
+        <div class ="well well-danger">
+          <h3 >$<%= @client.tax_projected %>.00</h3>
+        </div>
       </div>
     </div>
   </div>
@@ -124,4 +128,3 @@
     <a href="#">Staff Preparation</a>
   </div>
 </div>
-
