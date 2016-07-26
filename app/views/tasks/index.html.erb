@@ -10,14 +10,19 @@
     <thead>
       <tr>
         <td><strong>Task Name</strong></td>
-        <td><strong>Task Frequency</strong></td>
+        <td><strong>Client</strong></td>
+        <td><strong>Staff Assignment</strong></td>
+        <td><strong>Status</strong></td>
         <td><strong>Task Due Date</strong></td>
       </tr>
     </thead>
     <% @task.each do |task| %>
       <tr>
         <td><%= link_to task.task_name, task %></td>
-        <td><%= task.task_frequency %></td>
+        <td><%= Client.find(task.client_id).client_name %></td>
+        
+        <td>Nick Boyd</td>
+        <td>Not Started</td>
         <td><%= task.task_due %></td>
       </tr>
     <% end %>

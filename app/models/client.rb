@@ -1,4 +1,5 @@
 class Client < ActiveRecord::Base
+  has_many :tasks
   
   def return_type
     if business_type == 'Sole Proprietor'

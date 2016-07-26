@@ -4,7 +4,7 @@
    <%= t.input :task_name %>
   <%= t.input :task_due %>
   <%= t.input :task_frequency, :collection => ['Weekly', 'Monthly', 'Quarterly', 'Annual'] %>
-  
+  <%= t.association :client, label_method: :client_name, required: true %>
   <%= t.button :submit %>
   </div>
 </div>
