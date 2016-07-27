@@ -1,0 +1,8 @@
+<%= simple_form_for @note do |n| %>
+  <%= n.input :note_date %>
+  <%= n.input :note_owner %>
+  <%= n.input :note_contents %>
+  <%= n.association :task, label_method: :task_name, required: true %>
+   
+  <%= n.button :submit %>
+  <% end %>

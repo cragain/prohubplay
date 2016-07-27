@@ -14,10 +14,10 @@ class Client < ActiveRecord::Base
   
   def new_client_tasks
     if business_type == 'Sole Proprietor'
-      Task.create(:task_name => "Personal Tax Return", :task_frequency => "Annual", :client_id => self.id, :task_due => '2017-04-15', :task_status => 'Not Started', :task_assigned_to => 'No User')
+      Task.create(:task_name => "Personal Tax Return", :task_frequency => "Annual", :client_id => self.id, :task_due => '2017-04-15', :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A')
     else
-      Task.create(:task_name => "Personal Tax Return", :task_frequency => "Annual", :client_id => self.id, :task_due => '2017-04-15', :task_status => 'Not Started', :task_assigned_to => 'No User')
-      Task.create(:task_name => "Business Tax Return", :task_frequency => "Annual", :client_id => self.id, :task_due => '2017-03-15', :task_status => 'Not Started', :task_assigned_to => 'No User')
+      Task.create(:task_name => "Personal Tax Return", :task_frequency => "Annual", :client_id => self.id, :task_due => '2017-04-15', :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A')
+      Task.create(:task_name => "Business Tax Return", :task_frequency => "Annual", :client_id => self.id, :task_due => '2017-03-15', :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A')
     end
   end
   

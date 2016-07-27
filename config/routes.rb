@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
   
   root 'dashboard#index'
-  resources :tasks
-  resources :clients
-  resources :notes
+  resources :tasks do
+    resources :notes
+  end
   
+  resources :clients
   
   
   get 'calendar/index'
