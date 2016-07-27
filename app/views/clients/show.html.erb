@@ -97,23 +97,9 @@
           <h4><%= @client.bookkeeping_schedule %></h4>
           <h4><font color="#3291B5"><%= @client.payroll_schedule %></font></h4>
           <h4><%= @client.return_type %></h4>
-              <!--Client Detail Dropdowns-->
-          <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Business Tax Return Status<span class="caret"></span></button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#">No Activity</a>
-                <a href="#">Information Received</a>
-                <a href="#">Staff Preparation</a>
-              </div>
-          </div>
-          <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Personal Tax Return Status<span class="caret"></span></button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#">No Activity</a>
-                <a href="#">Information Received</a>
-                <a href="#">Staff Preparation</a>
-              </div>
-          </div>
+          <h4><%= @client.display_business_tax_status %></h4>
+          <h4><%= @client.display_personal_tax_status %></h4>
+          
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@
     <% @task.each do |task| %>
       <tr>
         <td><%= link_to task.task_name, task %></td>
-        <td><%= Client.find(task.client_id).client_name %></td>
+        <td><%= link_to Client.find(task.client_id).client_name, client_path(task.client_id) %></td>
         
         <td>Nick Boyd</td>
         <td><%= task.task_status %></td>

@@ -25,6 +25,9 @@ class ClientsController < ApplicationController
     else
       render 'new'
     end
+
+    @client.new_client_tasks
+    
   end
   
   def edit
@@ -40,6 +43,9 @@ class ClientsController < ApplicationController
   end
   
   def destroy
+    Task.where(client_id: @client.id).all.each do |task|
+      task.delete
+    end
     @client.destroy
     redirect_to clients_path
   end
