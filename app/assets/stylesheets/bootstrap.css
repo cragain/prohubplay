@@ -5886,6 +5886,7 @@ button.close {
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
   outline: 0;
+  
 }
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform .3s ease-out;
@@ -5913,6 +5914,7 @@ button.close {
 }
 .modal-content {
   position: relative;
+  height: 315px;
   background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
@@ -5953,7 +5955,10 @@ button.close {
 }
 .modal-body {
   position: relative;
-  padding: 15px;
+  height: 180px;
+  padding-left: 15px;
+  padding-top: 15px;
+  
 }
 .modal-footer {
   padding: 15px;

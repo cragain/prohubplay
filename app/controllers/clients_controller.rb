@@ -3,6 +3,8 @@ class ClientsController < ApplicationController
  before_action :show, only: [:show, :edit, :update, :destroy]
   
   
+ 
+  
   def index
     @clients = Client.all
   end

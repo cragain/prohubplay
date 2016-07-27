@@ -22,8 +22,9 @@
         <td><%= Client.find(task.client_id).client_name %></td>
         
         <td>Nick Boyd</td>
-        <td>Not Started</td>
+        <td><%= task.task_status %></td>
         <td><%= task.task_due %></td>
+        <td>Button Here</td>
       </tr>
     <% end %>
   </table>

@@ -1,0 +1,10 @@
+<div class="row">
+  <%= simple_form_for @task do |t| %>
+  <div class="col-md-6">
+  <%= t.input :task_status %>
+  <%= t.input :task_assigned_to, :collection => ['Chris Ragain', 'Nick Boyd', 'Nancy Gamez', 'Debbie Windsor'] %>
+  <%= t.button :submit, class: "btn-primary" %>
+  </div>
+</div>
+
+<% end %>

@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  
   root 'dashboard#index'
   resources :tasks
   resources :clients
+  resources :notes
   
   
   

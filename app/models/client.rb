@@ -1,5 +1,6 @@
 class Client < ActiveRecord::Base
   has_many :tasks
+  attr_accessor :tasks
   
   def return_type
     if business_type == 'Sole Proprietor'
@@ -10,6 +11,8 @@ class Client < ActiveRecord::Base
       return 'S-corporation | Form 1120S'
     end
   end
+  
+  
   
   
 end

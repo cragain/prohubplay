@@ -5,6 +5,7 @@
   <%= t.input :task_due %>
   <%= t.input :task_frequency, :collection => ['Weekly', 'Monthly', 'Quarterly', 'Annual'] %>
   <%= t.association :client, label_method: :client_name, required: true %>
+  <%= t.input :task_status, :collection => ['Not Started', 'In Progress', 'Missing Information', 'Ready for Review', 'Complete'] %>
   <%= t.button :submit %>
   </div>
 </div>

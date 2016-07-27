@@ -39,8 +39,8 @@
           <div class="col-md-6">
             <h5><%= @client.business_name %></h5>
             <h5><%= @client.business_type %></h5>
-            <h6>luke@skywalkertutors.com</h6>
-            <h6>222.456.7896</h6>
+            <h6><%= mail_to @client.primary_email %></h6>
+            <h6><%= @client.primary_phone %></h6>
           </div>
         </div>
       </div>
@@ -52,6 +52,28 @@
         <h3 class="panel-title">Upcoming Tasks</h3>
       </div>
       <div class="panel-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Task Name</th>
+              <th>Due Date</th>
+              <th>Staff Assignment</th>
+              <th>Task Status</th>
+              <th>Task Frequency</th>
+            </tr>
+          </thead>
+          <tbody>
+         <% Task.where(client_id: @client.id).all.each do |task| %> 
+          <tr>
+            <td class="col-md-2"><%= link_to task.task_name, task %></td>
+            <td class="col-md-2"><%= task.task_due.strftime('%b  %d  %Y') %></td>
+            <td class="col-md-2"><%= task.task_assigned_to %></td>
+            <td class="col-md-2"><%= task.task_status %></td>
+            <td class="col-md-2"><%= task.task_frequency %></td>
+          </tr>
+        <% end %>
+        </tbody>
+        </table>
         <%= link_to "New Task", new_task_path, class: "btn btn-primary" %>
       </div>
     </div>
