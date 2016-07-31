@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="im-center">
+    <div class="col-md-12">
+      <%= simple_form_for @rolled_task do |t| %>
+    
+      <%= t.input :task_due, :label => "Next Due Date", placeholder: @task.task_due_roll %> 
+      <%= t.button :submit, class: "btn-primary" %>
+ 
+    </div>
+  </div>
+</div>
+
+
+<% end %>

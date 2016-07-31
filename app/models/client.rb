@@ -1,14 +1,16 @@
 class Client < ActiveRecord::Base
+  default_scope { order('client_name ASC')}
+  
   has_many :tasks
   attr_accessor :tasks
   
   def return_type
     if business_type == 'Sole Proprietor'
-      return 'Sole Proprietor | Schedule C'
+      return 'Schedule C'
     elsif business_type == 'Partnership'
-      return 'Partnership | Form 1065'
+      return 'Form 1065'
     else
-      return 'S-corporation | Form 1120S'
+      return 'Form 1120S'
     end
   end
   
@@ -18,6 +20,14 @@ class Client < ActiveRecord::Base
     else
       Task.create(:task_name => "Personal Tax Return", :task_frequency => "Annual", :client_id => self.id, :task_due => '2017-04-15', :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A')
       Task.create(:task_name => "Business Tax Return", :task_frequency => "Annual", :client_id => self.id, :task_due => '2017-03-15', :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A')
+    end
+    
+    if bookkeeping_schedule == 'Weekly'
+      Task.create(:task_name => "Weekly Bookkeeping", :task_frequency => "Books Weekly", :client_id => self.id, :task_due => Time.now, :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A')
+    elsif bookkeeping_schedule == 'Monthly'
+      Task.create(:task_name => "Monthly Bookkeeping", :task_frequency => "Books Monthly", :client_id => self.id, :task_due => Time.now, :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A')
+    else
+      Task.create(:task_name => "Quarterly Bookkeeping", :task_frequency => "Books Quarterly", :client_id => self.id, :task_due => Time.now, :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A')
     end
   end
   

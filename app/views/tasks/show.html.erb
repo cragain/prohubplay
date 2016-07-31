@@ -35,11 +35,11 @@
             <h4><%= @task.task_assigned_to %></h4>
             <h2>&nbsp</h2>
           </div>
-          <div class="text-center">  
+          <div class ="text-center"> 
             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
               Update Task
             </button>
-          </div>
+         
           <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -53,6 +53,27 @@
                   <%= render 'update_task_form' %>
                 </div>
               </div>
+            </div>
+          </div>
+           
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+              Complete Task
+            </button>
+         
+          <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h3 class="modal-title" id="myModalLabel">Complete Task</h3>
+                </div>
+                <div class="modal-body">
+                  <%= render 'task_complete_form' %>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -108,7 +129,7 @@
           </div>
           <div class="col-md-4">
             <h4><%= @task.created_at.strftime('%b  %d  %Y') %></h4>
-            <h4>15 Minutes</h4>
+            <h4><%= @task.project_size %> Minutes</h4>
             <h4><%= @task.staff_accountant %></h4>
             <h4><%= @task.reviewer %></h4>
           </div>
@@ -132,11 +153,11 @@
           
           <!-- Modal Starts -->
           <div class="text-center">  
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
               Update Options
             </button>
           </div>
-          <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">

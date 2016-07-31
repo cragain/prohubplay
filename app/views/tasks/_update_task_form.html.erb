@@ -3,8 +3,13 @@
   <div class="col-md-6">
   <%= t.input :task_status %>
   <%= t.input :task_assigned_to, :collection => ['Chris Ragain', 'Nick Boyd', 'Nancy Gamez', 'Debbie Windsor'] %>
-  <%= t.button :submit, class: "btn-primary" %>
+  
   </div>
+  <div class="col-md-6">
+  <%= t.input :task_frequency, :collection => ['Books Weekly', 'Books Monthly', 'Books Quarterly', 'Tax Annual', 'Payroll Bi-Weekly', 'Payroll Monthly'] %>
+  <%= t.input :task_due %>
+  </div>
+  <%= t.button :submit, class: "btn-primary" %>
 </div>
 
 <% end %>

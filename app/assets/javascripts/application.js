@@ -12,8 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.turbolinks
+
 //= require turbolinks
 //= require_tree .
+
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */

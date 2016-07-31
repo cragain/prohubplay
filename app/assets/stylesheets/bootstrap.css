@@ -1285,7 +1285,7 @@ h5,
 }
 h6,
 .h6 {
-  font-size: 12px;
+  font-size: 9px;
 }
 p {
   margin: 0 0 10px;
@@ -5463,7 +5463,7 @@ button.list-group-item-danger.active:focus {
           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 .panel-body {
-  padding: 15px;
+  padding: 5px;
 }
 .panel-heading {
   padding: 10px 15px;
@@ -5915,7 +5915,9 @@ button.close {
 }
 .modal-content {
   position: relative;
-  height: 315px;
+  height: 415px;
+  width: 800px;
+  padding: 15px;
   background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
@@ -5956,7 +5958,7 @@ button.close {
 }
 .modal-body {
   position: relative;
-  height: 180px;
+  height: 250px;
   padding-left: 15px;
   padding-top: 15px;
   

@@ -2,24 +2,24 @@
 <div class="row">
   <%= simple_form_for @client do |f| %>
   <div class="col-md-6">
-   <%= f.input :client_name %>
-  <%= f.input :business_name %>
-  <%= f.input :business_type, :collection => ['S-corp', 'Partnership', 'Sole Proprietor'] %>
-  <%= f.input :bookkeeping_schedule, :collection => ['Weekly', 'Monthly', 'Quarterly'] %>
-  <%= f.input :payroll_schedule, :collection => ['Weekly', 'Bi-weekly', 'Monthly', 'Quarterly'] %>
+   <%= f.input :client_name, required: true %>
+  <%= f.input :business_name, required: true %>
+  <%= f.input :business_type, :collection => ['S-corp', 'Partnership', 'Sole Proprietor'], required: true %>
+  <%= f.input :bookkeeping_schedule, :collection => ['Weekly', 'Monthly', 'Quarterly'], required: true %>
+  <%= f.input :payroll_schedule, :collection => ['Weekly', 'Bi-weekly', 'Monthly', 'Quarterly'], required: true %>
   <%= f.input :tax_projected %> 
-  <%= f.input :primary_email %>
+  <%= f.input :primary_email, required: true %>
   <%= f.input :secondary_email %>
   <%= f.button :submit %>
   </div>
   <div class="col-md-6">
-   <%= f.input :street_address %>
+   <%= f.input :street_address, required: true %>
   <%= f.input :street_address_2 %>
-  <%= f.input :city %>
-  <%= f.input :state %>
-  <%= f.input :zip %>
+  <%= f.input :city, required: true %>
+  <%= f.input :state, required: true %>
+  <%= f.input :zip, required: true %>
   
-  <%= f.input :primary_phone %>
+  <%= f.input :primary_phone, required: true %>
   <%= f.input :secondary_phone %> 
   </div>
   

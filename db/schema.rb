@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160727155625) do
+ActiveRecord::Schema.define(version: 20160730030308) do
 
   create_table "clients", force: :cascade do |t|
     t.string   "client_name"
@@ -34,6 +34,11 @@ ActiveRecord::Schema.define(version: 20160727155625) do
     t.string   "secondary_phone"
   end
 
+  create_table "dashboards", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "notes", force: :cascade do |t|
     t.date     "note_date"
     t.string   "note_owner"
@@ -41,6 +46,11 @@ ActiveRecord::Schema.define(version: 20160727155625) do
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.integer  "task_id"
+  end
+
+  create_table "schedules", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "tasks", force: :cascade do |t|
@@ -56,6 +66,14 @@ ActiveRecord::Schema.define(version: 20160727155625) do
     t.string   "task_assigned_to"
     t.string   "staff_accountant"
     t.string   "reviewer"
+    t.integer  "project_size"
+    t.string   "schedule"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "dropbox_session"
   end
 
 end

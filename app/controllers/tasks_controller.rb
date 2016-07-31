@@ -9,6 +9,7 @@ class TasksController < ApplicationController
   
   def show
     @task = Task.find(params[:id])
+    @rolled_task = Task.find(params[:id]).tap { |t| t.task_due = t.task_due_roll }
   end
   
   def new
@@ -26,6 +27,10 @@ class TasksController < ApplicationController
     end
   end
   
+  def schedule
+    
+  end
+  
   def update
     if @task.update(task_params)
       redirect_to task_path(@task)
@@ -41,10 +46,10 @@ class TasksController < ApplicationController
   private
   
   def task_params
-    params.require(:task).permit(:task_name, :task_frequency, :task_due, :client_name, :client_id, :task_status, :task_assigned_to,
-    :staff_accountant, :reviewer)
+    params.require(:task).permit(:task_name, :task_frequency, :task_due, :client_name, :client_id, :schedule, :task_status, :task_assigned_to, :staff_accountant, :reviewer, :project_size)
   end
-
+  
+  
 
 end
 

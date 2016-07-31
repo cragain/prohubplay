@@ -14,6 +14,7 @@
         <td><strong>Staff Assignment</strong></td>
         <td><strong>Status</strong></td>
         <td><strong>Task Due Date</strong></td>
+        <td><strong>Project Size</strong></td>
       </tr>
     </thead>
     <% @task.each do |task| %>
@@ -21,10 +22,10 @@
         <td><%= link_to task.task_name, task %></td>
         <td><%= link_to Client.find(task.client_id).client_name, client_path(task.client_id) %></td>
         
-        <td>Nick Boyd</td>
+        <td><%= task.task_assigned_to %></td>
         <td><%= task.task_status %></td>
-        <td><%= task.task_due %></td>
-        <td>Button Here</td>
+        <td><%= task.task_due.strftime('%b %d %Y') %></td>
+        <td><%= task.project_size %> Minutes</td>
       </tr>
     <% end %>
   </table>

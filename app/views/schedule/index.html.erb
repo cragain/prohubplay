@@ -1,0 +1,113 @@
+<div class="row">
+  <h2>Schedule</h2>
+</div>
+  
+<div class="col-md-3">
+  <div class="panel panel-default">
+    
+      
+    <div class="panel-heading">Week 1</div>
+     
+      <div class="panel-body">
+        <table class="table">
+          <thead>
+            <tr> 
+              <th><h6>Task Name</h6></th>
+              <th><h6>Client Name</h6></th>
+              <th><h6>Project Size</h6></th>
+            </tr>  
+          </thead>
+          <tbody>
+            <% @schedule.weeks_tasks.select{|tasks| ['Week 1', 'Every Week'].include? tasks.schedule }.each do |tasks| %>
+            <tr>
+              <td><h6><%= tasks.task_name %></h6></td>
+              <td><h6><%= Client.find(tasks.client_id).client_name %></h6></td>
+              <td><h6><%= tasks.project_size %> Minutes </h6></td>
+            </tr>
+           <% end  %>
+          </tbody>
+        </table> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="panel panel-default">
+    <div class="panel-heading">Week 2</div>
+      <div class="panel-body">
+        <table class="table">
+          <thead>
+            <tr> 
+              <th><h6>Business Name</h6></th>
+              <th><h6>Client Id</h6></th>
+              <th><h6>Project Size</h6></th>
+            </tr>  
+          </thead>
+          <tbody>
+            <% @schedule.weeks_tasks.select{|tasks| ['Week 2', 'Every Week'].include? tasks.schedule }.each do |tasks| %>
+            <tr>
+                <td><h6><%=tasks.task_name %></h6></td>
+                <td><h6><%= Client.find(tasks.client_id).client_name %></h6></td>
+                <td><h6><%= tasks.project_size %> Minutes </h6></td>
+              </tr>
+            <% end  %>
+          </tbody>
+        </table> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="panel panel-default">
+    <div class="panel-heading">Week 3</div>
+      <div class="panel-body">
+        <table class="table">
+          <thead>
+            <tr> 
+              <th><h6>Business Name</h6></th>
+              <th><h6>Client Id</h6></th>
+              <th><h6>Project Size</h6></th>
+            </tr>  
+          </thead>
+          <tbody>
+            <% @schedule.weeks_tasks.select{|tasks| ['Week 3', 'Every Week'].include? tasks.schedule }.each do |tasks| %>
+            <tr>
+                <td><h6><%=tasks.task_name %></h6></td>
+                <td><h6><%= Client.find(tasks.client_id).client_name %></h6></td>
+                <td><h6><%= tasks.project_size %> Minutes </h6></td>
+              </tr>
+            <% end  %>
+          </tbody>
+        </table> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="panel panel-default">
+    <div class="panel-heading">Week 4</div>
+      <div class="panel-body">
+        <table class="table">
+          <thead>
+            <tr> 
+              <th><h6>Business Name</h6></th>
+              <th><h6>Client Id</h6></th>
+              <th><h6>Project Size</h6></th>
+            </tr>  
+          </thead>
+          <tbody>
+            <% @schedule.weeks_tasks.select{|tasks| ['Week 4', 'Every Week'].include? tasks.schedule }.each do |tasks| %>
+            <tr>
+                <td><h6><%=tasks.task_name %></h6></td>
+                <td><h6><%= Client.find(tasks.client_id).client_name %></h6></td>
+                <td><h6><%= tasks.project_size %> Minutes </h6></td>
+              </tr>
+            <% end  %>
+          </tbody>
+        </table> 
+      </div>
+  </div>
+</div>
+
+
+    
+  
+
+    
