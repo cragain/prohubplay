@@ -1,7 +1,7 @@
 <div class="row">
   <%= simple_form_for @task do |t| %>
   <div class="col-md-6">
-  <%= t.input :staff_accountant, :collection => ['Chris Ragain', 'Nick Boyd', 'Nancy Gamez', 'Debbie Windsor'] %>
+  <%= t.input :staff_accountant, :collection => User.all, :label_method => :user_name %>
   <%= t.input :reviewer, :collection => ['Chris Ragain', 'Nick Boyd'] %>
   <%= t.input :project_size, :collection => [15, 30, 60, 90, 120, 180, 240 ] %>
   <%= t.button :submit, class: "btn-primary" %>

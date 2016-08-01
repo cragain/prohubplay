@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
 gem 'dropbox-sdk', '~> 1.6', '>= 1.6.5'
 gem 'jquery-turbolinks'
+gem 'devise'
+gem 'devise-bootstrap-views'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

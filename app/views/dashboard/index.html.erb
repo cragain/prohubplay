@@ -1,6 +1,9 @@
+<%= link_to "logout", destroy_user_session_path, method: :delete %>
+
 <div class="row">
   <h2>Dashboard</h2>
-  <h3>Nick Boyd</h3>
+  <% user_signed_in? %>
+  <h3><%= current_user.user_name %></h3>
 </div>
 <div class="row">
   <div class="col-md-6">
@@ -19,7 +22,7 @@
             </tr>
           </thead>
           <tbody>
-          <% Task.select { |tasks| tasks.task_assigned_to == "Nick Boyd" && tasks.task_due < Time.now}.each do |task| %>
+          <% Task.select { |tasks| tasks.task_assigned_to == current_user.id.to_s && tasks.task_due < Time.now}.each do |task| %>
             <tr>
               <td><%= Client.find(task.client_id).client_name %> </td>
               <td><%= Client.find(task.client_id).business_name %></td>
@@ -44,7 +47,6 @@
     </div>
   </div>
 </div>
-
 
 
 

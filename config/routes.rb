@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  devise_for :users
   get 'schedule/index'
 
   root 'dashboard#index'

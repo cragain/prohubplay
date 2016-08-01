@@ -2,7 +2,7 @@
   <%= simple_form_for @task do |t| %>
   <div class="col-md-6">
   <%= t.input :task_status %>
-  <%= t.input :task_assigned_to, :collection => ['Chris Ragain', 'Nick Boyd', 'Nancy Gamez', 'Debbie Windsor'] %>
+  <%= t.input :task_assigned_to, :collection => User.all, :label_method => :user_name, :label_value => :user_name %>
   <%= t.input :schedule, :collection => ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Every Week', 'Quarterly', 'Annual'], required: true %>
   </div>
   <div class="col-md-6">

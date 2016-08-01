@@ -32,7 +32,7 @@
             <h4><%= @task.task_frequency %></h4>
             <h4><%= @task.updated_at.strftime('%b  %d  %Y') %></h4>
             <h4><%= @task.task_due.strftime('%b  %d  %Y') %></h4>
-            <h4><%= @task.task_assigned_to %></h4>
+            <h4><%= User.find(@task.task_assigned_to).user_name %></h4>
             <h2>&nbsp</h2>
           </div>
           <div class ="text-center"> 
