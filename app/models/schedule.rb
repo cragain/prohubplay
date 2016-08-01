@@ -15,7 +15,5 @@ class Schedule
     return week
     end
   end
-  
-  
 
 end

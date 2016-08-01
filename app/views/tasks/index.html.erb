@@ -13,6 +13,7 @@
         <td><strong>Client</strong></td>
         <td><strong>Staff Assignment</strong></td>
         <td><strong>Status</strong></td>
+        <td><strong>Schedule</strong></td>
         <td><strong>Task Due Date</strong></td>
         <td><strong>Project Size</strong></td>
       </tr>
@@ -24,6 +25,7 @@
         
         <td><%= task.task_assigned_to %></td>
         <td><%= task.task_status %></td>
+        <td><%= task.schedule %></td>
         <td><%= task.task_due.strftime('%b %d %Y') %></td>
         <td><%= task.project_size %> Minutes</td>
       </tr>

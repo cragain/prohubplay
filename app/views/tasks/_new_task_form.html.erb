@@ -7,7 +7,7 @@
   <%= t.association :client, label_method: :client_name, required: true %>
   <%= t.input :task_status, :collection => ['Not Started', 'In Progress', 'Missing Information', 'Ready for Review', 'Complete'], required: true %>
   <%= t.input :project_size, :collection => [15, 30, 60, 90, 120, 180, 240 ], required: true %>
-  <%= t.input :schedule, :collection => ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Every Week'], required: true %>
+  <%= t.input :schedule, :collection => ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Every Week', 'Quarterly', 'Annual'], required: true %>
   <%= t.button :submit %>
   </div>
 </div>
