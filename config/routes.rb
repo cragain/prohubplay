@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   
   resources :clients
   resources :documents
+  resources :users
   
   
   get 'calendar/index'

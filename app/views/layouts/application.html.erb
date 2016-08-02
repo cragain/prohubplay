@@ -42,8 +42,19 @@
       </a>
       <a class="header-icon-link-block w-inline-block" href="#"><%= image_tag "Appointment Reminders-48.png", width: '25' %><%= image_tag "Sort Down-48.png", width: '24' %>
       </a>
-      <a class="header-icon-link-block w-inline-block" href="#"><%= image_tag "Contacts-52.png", width: '25' %><%= image_tag "Sort Down-48.png", width: '24' %>
-      </a>
+      
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Profile
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><%= link_to "user profile", user_path(current_user.id) %></li>
+          <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
+        </ul>
+      </div>
+    
+    
     </div>
   </div>
   <div class="flex-parent">

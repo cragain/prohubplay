@@ -1,0 +1,11 @@
+<h2>User Profile & Settings</h2>
+<h3><%= current_user.user_name %></h3>
+
+<div class="col-md-5">  
+  <%= simple_form_for @user do |f| %>
+  <%= f.input :user_name %>
+  
+  <%= f.button :submit %>
+  
+  <% end %>
+</div>

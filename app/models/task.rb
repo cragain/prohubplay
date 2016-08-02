@@ -1,7 +1,6 @@
 class Task < ActiveRecord::Base
-  default_scope { order('task_due ASC')}
-  
   belongs_to :client
+  
   has_many :notes, dependent: :destroy
   attr_accessor :client
   attr_accessor :note
@@ -23,6 +22,14 @@ class Task < ActiveRecord::Base
     end
   end
   
+  def user_id_conversion
+    if task_assigned_to == "No User"
+      return "No User"
+    else
+      User.find(task_assigned_to).user_name
+    end
+  end
+  
   
   def task_week_select
    
@@ -35,25 +42,15 @@ class Task < ActiveRecord::Base
   
   def task_due_roll
     if task_frequency == 'Books Weekly' 
-      if Date.today.strftime("%A") == "Monday" || Date.today.strftime("%A") == "Tuesday"
-        Date.today + 2.days
-      else
-        Date.today + 3.days
-      end
+      Date.today + 2.days
     elsif task_frequency == 'Books Monthly' 
       Date.today + 7.days
     elsif task_frequency == 'Books Quarterly' 
       Date.today + 14.days
     elsif task_frequency == 'Payroll Bi-Weekly' 
-      task_due + 14.days
+      Date.today + 14.days
     elsif task_frequency == 'Payroll Monthly' 
-      task_due + 1.month 
-    elsif task_frequency == 'Annual'
-      if task_name == "Business Tax Return"
-        "2017-01-15"
-      else
-        "2017-02-15"
-      end
+      Date.today + 1.month 
     else 
     end
   end 

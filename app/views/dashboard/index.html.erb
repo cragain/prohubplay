@@ -1,4 +1,4 @@
-<%= link_to "logout", destroy_user_session_path, method: :delete %>
+
 
 <div class="row">
   <h2>Dashboard</h2>
@@ -26,9 +26,9 @@
             <tr>
               <td><%= Client.find(task.client_id).client_name %> </td>
               <td><%= Client.find(task.client_id).business_name %></td>
-              <td><%= task.task_name %></td>
+              <td><%= link_to task.task_name, task %></td>
               <td><%= task.task_due %></td>
-              <td><%= link_to "Task Detail", task, :class => "btn btn-default" %></td>
+              <td><% link_to "Task Detail", task, :class => "btn btn-default" %></td>
             </tr>
             <% end %>
           </tbody>
@@ -47,6 +47,51 @@
     </div>
   </div>
 </div>
+
+<!-- Second Row -->
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Staff Workflow</h3>
+      </div>
+      <div class="panel-body" style="min-height: 300px; max-height: 300px; overflow-y: scroll; ">
+        <table class="table">
+          <thead>
+            <tr>
+              <th><%= "Client Name" %></th>
+              <th><%= "Business Name" %></th>
+              <th><%= "Task Name" %></th>
+              <th><%= "Task Due" %></th>
+            </tr>
+          </thead>
+          <tbody>
+          <% Task.select { |tasks| tasks.task_assigned_to == current_user.id.to_s && tasks.task_due < Time.now}.each do |task| %>
+            <tr>
+              <td><%= Client.find(task.client_id).client_name %> </td>
+              <td><%= Client.find(task.client_id).business_name %></td>
+              <td><%= link_to task.task_name, task %></td>
+              <td><%= task.task_due %></td>
+              <td><% link_to "Task Detail", task, :class => "btn btn-default" %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Open Panel</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 
