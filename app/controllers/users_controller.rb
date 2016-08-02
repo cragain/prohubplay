@@ -29,6 +29,6 @@ def update
 private
 
   def user_params
-    params.require(:user).permit(:user_name)
+    params.require(:user).permit(:user_name, :other_staff_1, :other_staff_2, :other_staff_3, :other_staff_4)
   end
 end

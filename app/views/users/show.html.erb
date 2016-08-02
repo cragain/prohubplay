@@ -4,7 +4,10 @@
 <div class="col-md-5">  
   <%= simple_form_for @user do |f| %>
   <%= f.input :user_name %>
-  
+  <%= f.input :other_staff_1, :collection => User.all, :label_method => :user_name, :label_value => :user_name %>
+  <%= f.input :other_staff_2, :collection => User.all, :label_method => :user_name, :label_value => :user_name %>
+  <%= f.input :other_staff_3, :collection => User.all, :label_method => :user_name, :label_value => :user_name %>
+  <%= f.input :other_staff_4, :collection => User.all, :label_method => :user_name, :label_value => :user_name %>
   <%= f.button :submit %>
   
   <% end %>

@@ -41,8 +41,37 @@
       <div class="panel-heading">
         <h3 class="panel-title">Workflow Statistics</h3>
       </div>
-      <div class="panel-body">
-        Panel content
+      <div class="panel-body" style="min-height: 300px; max-height: 300px; overflow-y: scroll; ">
+        <% times = Task.select {|tasks| tasks.task_assigned_to == current_user.id.to_s && tasks.task_due < Time.now }   %>
+        <div class ="row row-stats">
+          <div class="col-md-4">  
+            <h2 class="text-center">Tasks Left</h2>
+            <h2 class="text-center"><%= times.count %></h2>
+          </div>
+          <div class="col-md-4">
+            <h2 class="text-center">Total Minutes</h2>
+            <h2 class="text-center"><%= times.map {|s| s['project_size']}.reduce(0, :+) %></h2>
+          </div>
+          <div class="col-md-4">
+            <h2 class="text-center">Total Clients</h2>
+            <h2 class="text-center"><%= times.map {|c| c['client_id']}.uniq.count %></h2>
+          </div>  
+        </div>
+        
+        <div class ="row row-stats2">
+          <div class="col-md-4">  
+            <h2 class="text-center">Book Tasks</h2>
+            <h2 class="text-center"><%= 2 %></h2>
+          </div>
+          <div class="col-md-4">
+            <h2 class="text-center">Payroll Tasks</h2>
+            <h2 class="text-center"><%= 0 %></h2>
+          </div>
+          <div class="col-md-4">
+            <h2 class="text-center">Tax Tasks</h2>
+            <h2 class="text-center"><%= 2 %></h2>
+          </div>  
+        </div>
       </div>
     </div>
   </div>
@@ -50,50 +79,27 @@
 
 <!-- Second Row -->
 <div class="row">
-  <div class="col-md-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Staff Workflow</h3>
-      </div>
-      <div class="panel-body" style="min-height: 300px; max-height: 300px; overflow-y: scroll; ">
-        <table class="table">
-          <thead>
-            <tr>
-              <th><%= "Client Name" %></th>
-              <th><%= "Business Name" %></th>
-              <th><%= "Task Name" %></th>
-              <th><%= "Task Due" %></th>
-            </tr>
-          </thead>
-          <tbody>
-          <% Task.select { |tasks| tasks.task_assigned_to == current_user.id.to_s && tasks.task_due < Time.now}.each do |task| %>
-            <tr>
-              <td><%= Client.find(task.client_id).client_name %> </td>
-              <td><%= Client.find(task.client_id).business_name %></td>
-              <td><%= link_to task.task_name, task %></td>
-              <td><%= task.task_due %></td>
-              <td><% link_to "Task Detail", task, :class => "btn btn-default" %></td>
-            </tr>
-            <% end %>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Open Panel</h3>
-      </div>
-      <div class="panel-body">
-        Panel content
-      </div>
-    </div>
-  </div>
+  
+  <% if current_user.other_staff_1 != "" %>
+    <%= render 'dashboard/panel' %>
+  <% end %>
+  <% if current_user.other_staff_2 != "" %>
+    <%= render 'dashboard/panel1' %>
+  <% end %>
+
 </div>
 
+<!-- Third Row -->
+<div class="row">
+  
+  <% if current_user.other_staff_3 != "" %>
+    <%= render 'dashboard/panel2' %>
+  <% end %>
+  <% if current_user.other_staff_4 != "" %>
+    <%= render 'dashboard/panel3' %>
+  <% end %>
 
-
+</div>
 
 
 
