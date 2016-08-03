@@ -42,7 +42,11 @@ class Task < ActiveRecord::Base
   
   def task_due_roll
     if task_frequency == 'Books Weekly' 
-      Date.today + 2.days
+      if Date.today == 'Monday' || Date.today == 'Tuesday'
+        Date.today + 2.days
+      else
+        Date.today + 3.days
+      end
     elsif task_frequency == 'Books Monthly' 
       Date.today + 7.days
     elsif task_frequency == 'Books Quarterly' 
