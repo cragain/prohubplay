@@ -130,8 +130,16 @@
           <div class="col-md-4">
             <h4><%= @task.task_due.strftime('%b  %d  %Y') %></h4>
             <h4><%= @task.project_size %> Minutes</h4>
-            <h4><%= User.find(@task.staff_accountant).user_name %></h4>
-            <h4><%= User.find(@task.reviewer).user_name %></h4>
+            <h4><% if @task.staff_accountant == "N/A" %>
+                <%= 'N/A' %> 
+                <% else %>
+                <%= User.find(@task.staff_accountant).user_name %></h4>
+                <% end %>
+            <h4><% if @task.reviewer == "N/A" %>
+                <%= 'N/A' %> 
+                <% else %>
+                <%= User.find(@task.reviewer).user_name %></h4>
+                <% end %>
           </div>
           <div class="text-center">
             <h5>Staff Availability</h5>
