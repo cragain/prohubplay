@@ -21,7 +21,7 @@
 </div> 
     <% @clients.each do |client| %>
       <tr>
-        <td><%= link_to client.client_name, client %></td>
+        <td class="linkto"><%= link_to client.client_name, client %></td>
         <td><%= client.business_name %></td>
         <td><%= client.business_type %></td>
         <td><%= client.bookkeeping_schedule %></td>
