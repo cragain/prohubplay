@@ -23,7 +23,7 @@ class Task < ActiveRecord::Base
   end
   
   def user_id_conversion
-    if task_assigned_to == "No User"
+    if task_assigned_to == "No User" || task_assigned_to == ""
       return "No User"
     else
       User.find(task_assigned_to).user_name

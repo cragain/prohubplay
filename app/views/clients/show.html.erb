@@ -92,7 +92,7 @@
           <tr>
             <td class="col-md-2"><%= link_to task.task_name, task %></td>
             <td class="col-md-2"><%= task.task_due.strftime('%b  %d  %Y') %></td>
-            <td class="col-md-2"><%= task.task_assigned_to %></td>
+            <td class="col-md-2"><%= task.user_id_conversion %></td>
             <td class="col-md-2"><%= task.task_status %></td>
             <td class="col-md-2"><%= task.task_frequency %></td>
           </tr>

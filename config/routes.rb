@@ -19,11 +19,13 @@ Rails.application.routes.draw do
 
   get 'tasks/index'
 
-  get 'documents/index'
+  
 
   get 'clients/index'
 
   get 'dashboard/index'
+  
+  
   
   
   # The priority is based upon order of creation: first created -> highest priority.
