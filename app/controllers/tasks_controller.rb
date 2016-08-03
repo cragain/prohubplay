@@ -4,7 +4,7 @@ class TasksController < ApplicationController
   
   
   def index
-    @task = Task.all
+    @task = Task.all.sort_by &:task_due
   end
   
   def show

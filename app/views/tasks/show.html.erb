@@ -33,7 +33,7 @@
             <h4><%= @task.updated_at.strftime('%b  %d  %Y') %></h4>
             <h4><%= @task.task_due.strftime('%b  %d  %Y') %></h4>
             <h4><%= @task.user_id_conversion %></h4>
-            <h2>&nbsp</h2>
+            <h3>&nbsp</h3>
           </div>
           <div class ="text-center"> 
             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -128,10 +128,10 @@
             <h5>Reviewer:</h5>
           </div>
           <div class="col-md-4">
-            <h4><%= @task.created_at.strftime('%b  %d  %Y') %></h4>
+            <h4><%= @task.task_due.strftime('%b  %d  %Y') %></h4>
             <h4><%= @task.project_size %> Minutes</h4>
-            <h4><%= @task.staff_accountant %></h4>
-            <h4><%= @task.reviewer %></h4>
+            <h4><%= User.find(@task.staff_accountant).user_name %></h4>
+            <h4><%= User.find(@task.reviewer).user_name %></h4>
           </div>
           <div class="text-center">
             <h5>Staff Availability</h5>

@@ -6,7 +6,7 @@ class ClientsController < ApplicationController
  
   
   def index
-    @clients = Client.all
+    @clients = Client.all.sort_by &:client_name
   end
   
   def show

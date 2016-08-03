@@ -24,17 +24,18 @@
 <body>
   
   <div class="header-section"><%= image_tag "New_PH360.png", height: '62', width: '200' %>
-    <div class="search-div"></div>
-    <div class="client-dropdown">
-      <div class="dropdown-parent w-dropdown" data-delay="0">
-        <div class="w-dropdown-toggle">
-          <div class="dropdown-text">Select Client</div>
-          <div class="dropdown-icon w-icon-dropdown-toggle"></div>
-        </div>
-        <nav class="w-dropdown-list"><a class="w-dropdown-link" href="#">Link 1</a><a class="w-dropdown-link" href="#">Link 2</a><a class="w-dropdown-link" href="#">Link 3</a>
-        </nav>
+    
+      <div class="dropdown dropdown-client">
+        <button class="btn btn-default dropdown-toggle btn-client-dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Select Client
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <% Client.all.each do |client| %>
+          <li><%= link_to client.client_name, client_path(client) %></li>
+          <% end %>
+        </ul>
       </div>
-    </div>
     <div class="header-icon-div">
       <a class="header-icon-link-block w-inline-block" href="#"><%= image_tag "Message Filled-50.png", width: '25' %><%= image_tag "Sort Down-48.png", width: '24' %>
       </a>
@@ -49,8 +50,8 @@
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li><%= link_to "user profile", user_path(current_user.id) %></li>
-          <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
+          <li><%= link_to "User profile", user_path(current_user.id) %></li>
+          <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
         </ul>
       </div>
     
@@ -74,14 +75,12 @@
           <%= link_to "Clients", clients_path, class: "nav-title" %>
         </div>
         <div class="nav-button">
-          <%= link_to "Documents", documents_index_path, class: "nav-title" %>
-        </div>
-        <div class="nav-button">
           <%= link_to "Tasks", tasks_path, class: "nav-title" %>
         </div>
-        <div class="last nav-button">
-          <%= link_to "Calendar", calendar_index_path, class: "nav-title" %>
+        <div class="nav-button">
+          <%= link_to "Schedule", schedule_index_path, class: "nav-title" %>
         </div>
+        
       </div>
     </div>
     <div class="body-div">
