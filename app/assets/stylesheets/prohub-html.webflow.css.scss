@@ -431,6 +431,7 @@
 .nav-title:hover {
   text-decoration: none;
   color: #fff;
+  background: none;
 }
 
 .current_page {
@@ -578,4 +579,9 @@
 
 .btn-panel {
   margin-top: 0px;
+}
+
+.btn-pro {
+  color: #fff;
+  background: #fff8500;
 }
