@@ -62,6 +62,8 @@ GEM
       json
     erubis (2.7.0)
     execjs (2.7.0)
+    foreman (0.82.0)
+      thor (~> 0.19.1)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -172,6 +174,7 @@ DEPENDENCIES
   devise
   devise-bootstrap-views
   dropbox-sdk (~> 1.6, >= 1.6.5)
+  foreman
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
