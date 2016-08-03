@@ -30,12 +30,10 @@
   </div>
 </div>
 
-
-
-
 <div class="col-md-3">
   <div class="panel panel-default">
-    <div class="panel-heading">Week 2</div>
+    <div class="panel-heading">Week 2 <span class="pull-right">Total Minutes:<% times = @schedule.weeks_tasks.select{|tasks| ['Every Week', 'Week 2'].include? tasks.schedule }%>
+      <%= times.map {|t| t['project_size']}.reduce(0, :+) %></span></div>
       <div class="panel-body">
         <table class="table">
           <thead>
@@ -60,7 +58,8 @@
 </div>
 <div class="col-md-3">
   <div class="panel panel-default">
-    <div class="panel-heading">Week 3</div>
+    <div class="panel-heading">Week 3 <span class="pull-right">Total Minutes:<% times = @schedule.weeks_tasks.select{|tasks| ['Every Week', 'Week 3'].include? tasks.schedule }%>
+      <%= times.map {|t| t['project_size']}.reduce(0, :+) %></span></div>
       <div class="panel-body">
         <table class="table">
           <thead>
@@ -85,7 +84,8 @@
 </div>
 <div class="col-md-3">
   <div class="panel panel-default">
-    <div class="panel-heading">Week 4</div>
+    <div class="panel-heading">Week 4 <span class="pull-right">Total Minutes:<% times = @schedule.weeks_tasks.select{|tasks| ['Every Week', 'Week 4'].include? tasks.schedule }%>
+      <%= times.map {|t| t['project_size']}.reduce(0, :+) %></span></div>
       <div class="panel-body">
         <table class="table">
           <thead>
