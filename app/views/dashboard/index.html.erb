@@ -92,10 +92,10 @@
 <!-- Second Row -->
 <div class="row">
   
-  <% if current_user.other_staff_1 != "" %>
+  <% if current_user.other_staff_1 != nil %>
     <%= render 'dashboard/panel' %>
   <% end %>
-  <% if current_user.other_staff_2 != "" %>
+  <% if current_user.other_staff_2 != nil %>
     <%= render 'dashboard/panel1' %>
   <% end %>
 
@@ -104,10 +104,10 @@
 <!-- Third Row -->
 <div class="row">
   
-  <% if current_user.other_staff_3 != "" %>
+  <% if current_user.other_staff_3 != nil %>
     <%= render 'dashboard/panel2' %>
   <% end %>
-  <% if current_user.other_staff_4 != "" %>
+  <% if current_user.other_staff_4 != nil %>
     <%= render 'dashboard/panel3' %>
   <% end %>
 
