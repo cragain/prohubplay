@@ -20,7 +20,8 @@
 }
 
 .body-div {
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -552,11 +553,29 @@
 }
 
 .row-stats {
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .row-stats2 {
-  margin-top: 100px;
-  margin-bottom: 35px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.well-stats {
+  text-align: center;
+  background: none;
+  border-syle: solid;
+  border-color: #ff8500;
+  border-width: 1px;
+  padding: none;
+  margin: none;
+}
+
+.bread-name {
+  margin-left: 20px;
+}
+
+.btn-panel {
+  margin-top: 0px;
 }

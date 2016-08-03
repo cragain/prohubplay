@@ -1,0 +1,10 @@
+Edit User
+
+<%= simple_form_for @user do |n| %>
+  <%= n.input :user_name %>
+  <%= n.input :email %>
+  <%= n.input :approved %>
+  
+   
+  <%= n.button :submit %>
+  <% end %>

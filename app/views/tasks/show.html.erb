@@ -17,7 +17,7 @@
         <div class="panel-heading">
           <h3 class="panel-title">Task Details</h3>
         </div>
-        <div class="panel-body" style="min-height: 300px">
+        <div class="panel-body" style="min-height: 300px; max-height: 300px">
           <div class="col-md-8">
             <h5>Task Created Date:</h5>
             <h5>Task Created By:</h5>
@@ -86,7 +86,7 @@
           <h3 class="panel-title pull-left">
             Task Notes
           </h3>
-          <button class="btn btn-default pull-right"><%= link_to "New Note", new_task_note_path(@task)%></button>
+          <button class="btn btn-default btn-panel pull-right"><%= link_to "New Note", new_task_note_path(@task)%></button>
           <div class="clearfix"></div>
         </div>
         <div class="panel-body" style="min-height: 300px; max-height: 300px; overflow-y: scroll;">

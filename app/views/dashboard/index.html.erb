@@ -3,7 +3,7 @@
 <div class="row">
   <h2>Dashboard</h2>
   <% user_signed_in? %>
-  <h3><%= current_user.user_name %></h3>
+  <h3 class="bread-name"><%= current_user.user_name %></h3>
 </div>
 <div class="row">
   <div class="col-md-6">
@@ -41,35 +41,47 @@
       <div class="panel-heading">
         <h3 class="panel-title">Workflow Statistics</h3>
       </div>
-      <div class="panel-body" style="min-height: 300px; max-height: 300px; overflow-y: scroll; ">
+      <div class="panel-body" style="min-height: 300px; max-height: 300px ">
         <% times = Task.select {|tasks| tasks.task_assigned_to == current_user.id.to_s && tasks.task_due < Time.now }   %>
         <div class ="row row-stats">
           <div class="col-md-4">  
-            <h2 class="text-center">Tasks Left</h2>
-            <h2 class="text-center"><%= times.count %></h2>
+            <div class="well well-stats">
+              <h3 class="text-center">Tasks Left</h3>
+              <h3 class="text-center"><%= times.count %></h3>
+            </div>
           </div>
           <div class="col-md-4">
-            <h2 class="text-center">Total Minutes</h2>
-            <h2 class="text-center"><%= times.map {|s| s['project_size']}.reduce(0, :+) %></h2>
+            <div class="well well-stats">
+              <h3 class="text-center">Total Minutes</h3>
+              <h3 class="text-center"><%= times.map {|s| s['project_size']}.reduce(0, :+) %></h3>
+            </div>
           </div>
           <div class="col-md-4">
-            <h2 class="text-center">Total Clients</h2>
-            <h2 class="text-center"><%= times.map {|c| c['client_id']}.uniq.count %></h2>
+            <div class="well well-stats">
+              <h3 class="text-center">Total Clients</h3>
+              <h3 class="text-center"><%= times.map {|c| c['client_id']}.uniq.count %></h3>
+            </div>
           </div>  
         </div>
         
         <div class ="row row-stats2">
-          <div class="col-md-4">  
-            <h2 class="text-center">Book Tasks</h2>
-            <h2 class="text-center"><%= 2 %></h2>
+          <div class="col-md-4">
+            <div class="well well-stats">  
+              <h3 class="text-center">Book Tasks</h3>
+              <h3 class="text-center"><%= (times.map {|b| b['task_name']}.keep_if {|v| v.include? "ook"}).count %></h3>
+            </div>
           </div>
           <div class="col-md-4">
-            <h2 class="text-center">Payroll Tasks</h2>
-            <h2 class="text-center"><%= 0 %></h2>
+            <div class="well well-stats">
+              <h3 class="text-center">Payroll Tasks</h3>
+              <h3 class="text-center"><%= (times.map {|d| d['task_name']}.keep_if {|nm| nm.include? "rol"}).count %></h3>
+            </div>
           </div>
           <div class="col-md-4">
-            <h2 class="text-center">Tax Tasks</h2>
-            <h2 class="text-center"><%= 2 %></h2>
+            <div class="well well-stats">
+              <h3 class="text-center">Tax Tasks</h3>
+              <h3 class="text-center"><%= (times.map {|b| b['task_name']}.keep_if {|v| v.include? "ax"}).count %></h3>
+            </div>
           </div>  
         </div>
       </div>

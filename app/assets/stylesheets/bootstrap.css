@@ -1223,7 +1223,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 h1 small,
@@ -3009,6 +3009,7 @@ select[multiple].input-lg {
   padding: 6px 12px;
   margin-bottom: 0;
   margin-right: 5px;
+  margin-top: 10px;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;

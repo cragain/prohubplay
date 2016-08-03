@@ -1,0 +1,15 @@
+
+
+<% @users.where(:approved => false).each do |user| %>
+
+<div class="table">
+  <tr>
+    <td><%= user.email %></td>
+    <td><%= user.approved %></td>
+    <td><%= link_to "Edit", edit_user_path(user) %></td>
+  </tr>
+</div>    
+    
+    
+
+<% end %>

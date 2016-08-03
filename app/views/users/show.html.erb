@@ -12,3 +12,10 @@
   
   <% end %>
 </div>
+
+<h1>Users</h1>
+
+<%= link_to "All Users", :action => "index" %>
+|
+<%= link_to "Users awaiting approval", :action => "index", :approved => "false" %>
+

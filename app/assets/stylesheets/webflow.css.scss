@@ -90,15 +90,7 @@ input.w-button {
   -webkit-appearance: button;
 }
 
-.row-stats {
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
 
-.row-stats2 {
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
 
 html[data-w-dynpage] [data-w-cloak] {
   color: transparent !important;
@@ -110,7 +102,7 @@ h4,
 h5,
 h6 {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 h1 {
   font-size: 38px;
@@ -120,14 +112,14 @@ h1 {
 h2 {
   font-size: 32px;
   line-height: 36px;
-  margin-top: 0px;
+  margin-top: 20px;
   margin-left: 20px;
 }
 h3 {
   font-size: 24px;
   line-height: 30px;
-  margin-top: 10px;
-  margin-left: 20px;
+  margin-top: 5px;
+  margin-left: 0px;
 }
 h4 {
   font-size: 14px;

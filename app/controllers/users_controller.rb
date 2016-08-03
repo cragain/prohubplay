@@ -1,5 +1,10 @@
 class UsersController < ApplicationController
 
+  def index
+    @users = User.all
+  end
+  
+
 def create
  
 end
@@ -14,7 +19,7 @@ end
 
 
 
-def update
+  def update
     @user = User.find(params[:id])
     if @user.update_attributes(user_params)
       # Handle a successful update.
@@ -29,6 +34,6 @@ def update
 private
 
   def user_params
-    params.require(:user).permit(:user_name, :other_staff_1, :other_staff_2, :other_staff_3, :other_staff_4)
+    params.require(:user).permit(:user_name, :other_staff_1, :other_staff_2, :other_staff_3, :other_staff_4, :approved)
   end
 end
