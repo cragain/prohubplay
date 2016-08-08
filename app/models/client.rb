@@ -16,18 +16,18 @@ class Client < ActiveRecord::Base
   
   def new_client_tasks
     if business_type == 'Sole Proprietor'
-      Task.create(:task_name => "Personal Tax Return", :task_frequency => "Annual", :client_id => self.id, :task_due => '2017-04-15', :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Annual')
+      Task.create(:task_name => "Personal Tax Return", :task_frequency => "Annual", :client_id => self.id, :task_due => '2017-04-15', :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Annual', :project_size => 1)
     else
-      Task.create(:task_name => "Personal Tax Return", :task_frequency => "Annual", :client_id => self.id, :task_due => '2017-04-15', :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Annual')
-      Task.create(:task_name => "Business Tax Return", :task_frequency => "Annual", :client_id => self.id, :task_due => '2017-03-15', :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Annual')
+      Task.create(:task_name => "Personal Tax Return", :task_frequency => "Annual", :client_id => self.id, :task_due => '2017-04-15', :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Annual', :project_size => 1 )
+      Task.create(:task_name => "Business Tax Return", :task_frequency => "Annual", :client_id => self.id, :task_due => '2017-03-15', :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Annual', :project_size => 1)
     end
     
     if bookkeeping_schedule == 'Weekly'
-      Task.create(:task_name => "Weekly Bookkeeping", :task_frequency => "Books Weekly", :client_id => self.id, :task_due => Time.now, :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Every Week')
+      Task.create(:task_name => "Weekly Bookkeeping", :task_frequency => "Books Weekly", :client_id => self.id, :task_due => Time.now, :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Every Week', :project_size => 1)
     elsif bookkeeping_schedule == 'Monthly'
-      Task.create(:task_name => "Monthly Bookkeeping", :task_frequency => "Books Monthly", :client_id => self.id, :task_due => Time.now, :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Week 1')
+      Task.create(:task_name => "Monthly Bookkeeping", :task_frequency => "Books Monthly", :client_id => self.id, :task_due => Time.now, :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Week 1', :project_size => 1)
     else
-      Task.create(:task_name => "Quarterly Bookkeeping", :task_frequency => "Books Quarterly", :client_id => self.id, :task_due => Time.now, :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Quarterly')
+      Task.create(:task_name => "Quarterly Bookkeeping", :task_frequency => "Books Quarterly", :client_id => self.id, :task_due => Time.now, :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Quarterly', :project_size => 1)
     end
   end
   
