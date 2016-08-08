@@ -10,6 +10,7 @@
     <thead>
       <tr>
         <td><strong>Task Name</strong></td>
+        <td><strong>Business</strong></td>
         <td><strong>Client</strong></td>
         <td><strong>Staff Assignment</strong></td>
         <td><strong>Status</strong></td>
@@ -21,8 +22,8 @@
     <% @task.each do |task| %>
       <tr>
         <td><%= link_to task.task_name, task %></td>
+        <td><%= link_to Client.find(task.client_id).business_name, client_path(task.client_id) %></td>
         <td><%= link_to Client.find(task.client_id).client_name, client_path(task.client_id) %></td>
-        
         <td><%= task.user_id_conversion %></td>
         <td><%= task.task_status %></td>
         <td><%= task.schedule %></td>
