@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   
-  resources :ragains
   devise_for :users
   get 'schedule/index'
 

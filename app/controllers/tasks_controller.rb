@@ -4,7 +4,8 @@ class TasksController < ApplicationController
   
   
   def index
-    @task = Task.all.sort_by &:task_due
+    @search = Task.ransack(params[:q])
+    @task = @search.result
   end
   
   def show
