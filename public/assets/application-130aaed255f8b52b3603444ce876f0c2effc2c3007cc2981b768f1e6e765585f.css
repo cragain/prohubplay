@@ -1,9 +1,611 @@
+/* line 1, /usr/local/rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.8/app/assets/stylesheets/devise_bootstrap_views.scss */
+.float-none {
+  float: none;
+}
+
+/* line 5, /usr/local/rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.8/app/assets/stylesheets/devise_bootstrap_views.scss */
+.panel-heading {
+  padding: 15px;
+}
+/* line 7, /usr/local/rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.8/app/assets/stylesheets/devise_bootstrap_views.scss */
+.panel-heading h4 {
+  margin: 0px;
+}
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+}
+.btn-default:active,
+.btn-primary:active,
+.btn-success:active,
+.btn-info:active,
+.btn-warning:active,
+.btn-danger:active,
+.btn-default.active,
+.btn-primary.active,
+.btn-success.active,
+.btn-info.active,
+.btn-warning.active,
+.btn-danger.active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.btn-default.disabled,
+.btn-primary.disabled,
+.btn-success.disabled,
+.btn-info.disabled,
+.btn-warning.disabled,
+.btn-danger.disabled,
+.btn-default[disabled],
+.btn-primary[disabled],
+.btn-success[disabled],
+.btn-info[disabled],
+.btn-warning[disabled],
+.btn-danger[disabled],
+fieldset[disabled] .btn-default,
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-success,
+fieldset[disabled] .btn-info,
+fieldset[disabled] .btn-warning,
+fieldset[disabled] .btn-danger {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.btn-default .badge,
+.btn-primary .badge,
+.btn-success .badge,
+.btn-info .badge,
+.btn-warning .badge,
+.btn-danger .badge {
+  text-shadow: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+}
+.btn-default {
+  text-shadow: 0 1px 0 #fff;
+  background-image: -webkit-linear-gradient(top, #fff 0%, #e0e0e0 100%);
+  background-image:      -o-linear-gradient(top, #fff 0%, #e0e0e0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));
+  background-image:         linear-gradient(to bottom, #fff 0%, #e0e0e0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #dbdbdb;
+  border-color: #ccc;
+}
+.btn-default:hover,
+.btn-default:focus {
+  background-color: #e0e0e0;
+  background-position: 0 -15px;
+}
+.btn-default:active,
+.btn-default.active {
+  background-color: #e0e0e0;
+  border-color: #dbdbdb;
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  background-color: #e0e0e0;
+  background-image: none;
+}
+.btn-primary {
+  background-image: -webkit-linear-gradient(top, #337ab7 0%, #265a88 100%);
+  background-image:      -o-linear-gradient(top, #337ab7 0%, #265a88 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#265a88));
+  background-image:         linear-gradient(to bottom, #337ab7 0%, #265a88 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff265a88', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #245580;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #265a88;
+  background-position: 0 -15px;
+}
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #265a88;
+  border-color: #245580;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #265a88;
+  background-image: none;
+}
+.btn-success {
+  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);
+  background-image:      -o-linear-gradient(top, #5cb85c 0%, #419641 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641));
+  background-image:         linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #3e8f3e;
+}
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #419641;
+  background-position: 0 -15px;
+}
+.btn-success:active,
+.btn-success.active {
+  background-color: #419641;
+  border-color: #3e8f3e;
+}
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled.focus,
+.btn-success[disabled].focus,
+fieldset[disabled] .btn-success.focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: #419641;
+  background-image: none;
+}
+.btn-info {
+  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #2aabd2 100%);
+  background-image:      -o-linear-gradient(top, #5bc0de 0%, #2aabd2 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5bc0de), to(#2aabd2));
+  background-image:         linear-gradient(to bottom, #5bc0de 0%, #2aabd2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2aabd2', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #28a4c9;
+}
+.btn-info:hover,
+.btn-info:focus {
+  background-color: #2aabd2;
+  background-position: 0 -15px;
+}
+.btn-info:active,
+.btn-info.active {
+  background-color: #2aabd2;
+  border-color: #28a4c9;
+}
+.btn-info.disabled,
+.btn-info[disabled],
+fieldset[disabled] .btn-info,
+.btn-info.disabled:hover,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info:hover,
+.btn-info.disabled:focus,
+.btn-info[disabled]:focus,
+fieldset[disabled] .btn-info:focus,
+.btn-info.disabled.focus,
+.btn-info[disabled].focus,
+fieldset[disabled] .btn-info.focus,
+.btn-info.disabled:active,
+.btn-info[disabled]:active,
+fieldset[disabled] .btn-info:active,
+.btn-info.disabled.active,
+.btn-info[disabled].active,
+fieldset[disabled] .btn-info.active {
+  background-color: #2aabd2;
+  background-image: none;
+}
+.btn-warning {
+  background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
+  background-image:      -o-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(#eb9316));
+  background-image:         linear-gradient(to bottom, #f0ad4e 0%, #eb9316 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffeb9316', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #e38d13;
+}
+.btn-warning:hover,
+.btn-warning:focus {
+  background-color: #eb9316;
+  background-position: 0 -15px;
+}
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #eb9316;
+  border-color: #e38d13;
+}
+.btn-warning.disabled,
+.btn-warning[disabled],
+fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled.focus,
+.btn-warning[disabled].focus,
+fieldset[disabled] .btn-warning.focus,
+.btn-warning.disabled:active,
+.btn-warning[disabled]:active,
+fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning.active {
+  background-color: #eb9316;
+  background-image: none;
+}
+.btn-danger {
+  background-image: -webkit-linear-gradient(top, #d9534f 0%, #c12e2a 100%);
+  background-image:      -o-linear-gradient(top, #d9534f 0%, #c12e2a 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d9534f), to(#c12e2a));
+  background-image:         linear-gradient(to bottom, #d9534f 0%, #c12e2a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc12e2a', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #b92c28;
+}
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: #c12e2a;
+  background-position: 0 -15px;
+}
+.btn-danger:active,
+.btn-danger.active {
+  background-color: #c12e2a;
+  border-color: #b92c28;
+}
+.btn-danger.disabled,
+.btn-danger[disabled],
+fieldset[disabled] .btn-danger,
+.btn-danger.disabled:hover,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger:hover,
+.btn-danger.disabled:focus,
+.btn-danger[disabled]:focus,
+fieldset[disabled] .btn-danger:focus,
+.btn-danger.disabled.focus,
+.btn-danger[disabled].focus,
+fieldset[disabled] .btn-danger.focus,
+.btn-danger.disabled:active,
+.btn-danger[disabled]:active,
+fieldset[disabled] .btn-danger:active,
+.btn-danger.disabled.active,
+.btn-danger[disabled].active,
+fieldset[disabled] .btn-danger.active {
+  background-color: #c12e2a;
+  background-image: none;
+}
+.thumbnail,
+.img-thumbnail {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-color: #e8e8e8;
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+  background-image:      -o-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e8e8e8));
+  background-image:         linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+  background-repeat: repeat-x;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background-color: #2e6da4;
+  background-image: -webkit-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
+  background-image:      -o-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2e6da4));
+  background-image:         linear-gradient(to bottom, #337ab7 0%, #2e6da4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
+  background-repeat: repeat-x;
+}
+.navbar-default {
+  background-image: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+  background-image:      -o-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f8f8f8));
+  background-image:         linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a {
+  background-image: -webkit-linear-gradient(top, #dbdbdb 0%, #e2e2e2 100%);
+  background-image:      -o-linear-gradient(top, #dbdbdb 0%, #e2e2e2 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dbdbdb), to(#e2e2e2));
+  background-image:         linear-gradient(to bottom, #dbdbdb 0%, #e2e2e2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdbdbdb', endColorstr='#ffe2e2e2', GradientType=0);
+  background-repeat: repeat-x;
+  -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 3px 9px rgba(0, 0, 0, .075);
+}
+.navbar-brand,
+.navbar-nav > li > a {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+}
+.navbar-inverse {
+  background-image: -webkit-linear-gradient(top, #3c3c3c 0%, #222 100%);
+  background-image:      -o-linear-gradient(top, #3c3c3c 0%, #222 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#222));
+  background-image:         linear-gradient(to bottom, #3c3c3c 0%, #222 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .active > a {
+  background-image: -webkit-linear-gradient(top, #080808 0%, #0f0f0f 100%);
+  background-image:      -o-linear-gradient(top, #080808 0%, #0f0f0f 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#080808), to(#0f0f0f));
+  background-image:         linear-gradient(to bottom, #080808 0%, #0f0f0f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff080808', endColorstr='#ff0f0f0f', GradientType=0);
+  background-repeat: repeat-x;
+  -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);
+          box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+}
+.navbar-static-top,
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  border-radius: 0;
+}
+@media (max-width: 767px) {
+  .navbar .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-image: -webkit-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
+    background-image:      -o-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2e6da4));
+    background-image:         linear-gradient(to bottom, #337ab7 0%, #2e6da4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
+    background-repeat: repeat-x;
+  }
+}
+.alert {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 1px 2px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 1px 2px rgba(0, 0, 0, .05);
+}
+.alert-success {
+  background-image: -webkit-linear-gradient(top, #dff0d8 0%, #c8e5bc 100%);
+  background-image:      -o-linear-gradient(top, #dff0d8 0%, #c8e5bc 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(#c8e5bc));
+  background-image:         linear-gradient(to bottom, #dff0d8 0%, #c8e5bc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #b2dba1;
+}
+.alert-info {
+  background-image: -webkit-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
+  background-image:      -o-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(#b9def0));
+  background-image:         linear-gradient(to bottom, #d9edf7 0%, #b9def0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #9acfea;
+}
+.alert-warning {
+  background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #f8efc0 100%);
+  background-image:      -o-linear-gradient(top, #fcf8e3 0%, #f8efc0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf8e3), to(#f8efc0));
+  background-image:         linear-gradient(to bottom, #fcf8e3 0%, #f8efc0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fff8efc0', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #f5e79e;
+}
+.alert-danger {
+  background-image: -webkit-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);
+  background-image:      -o-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(#e7c3c3));
+  background-image:         linear-gradient(to bottom, #f2dede 0%, #e7c3c3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #dca7a7;
+}
+.progress {
+  background-image: -webkit-linear-gradient(top, #ebebeb 0%, #f5f5f5 100%);
+  background-image:      -o-linear-gradient(top, #ebebeb 0%, #f5f5f5 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#f5f5f5));
+  background-image:         linear-gradient(to bottom, #ebebeb 0%, #f5f5f5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff5f5f5', GradientType=0);
+  background-repeat: repeat-x;
+}
+.progress-bar {
+  background-image: -webkit-linear-gradient(top, #337ab7 0%, #286090 100%);
+  background-image:      -o-linear-gradient(top, #337ab7 0%, #286090 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#286090));
+  background-image:         linear-gradient(to bottom, #337ab7 0%, #286090 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff286090', GradientType=0);
+  background-repeat: repeat-x;
+}
+.progress-bar-success {
+  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #449d44 100%);
+  background-image:      -o-linear-gradient(top, #5cb85c 0%, #449d44 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#449d44));
+  background-image:         linear-gradient(to bottom, #5cb85c 0%, #449d44 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff449d44', GradientType=0);
+  background-repeat: repeat-x;
+}
+.progress-bar-info {
+  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
+  background-image:      -o-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5bc0de), to(#31b0d5));
+  background-image:         linear-gradient(to bottom, #5bc0de 0%, #31b0d5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff31b0d5', GradientType=0);
+  background-repeat: repeat-x;
+}
+.progress-bar-warning {
+  background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #ec971f 100%);
+  background-image:      -o-linear-gradient(top, #f0ad4e 0%, #ec971f 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(#ec971f));
+  background-image:         linear-gradient(to bottom, #f0ad4e 0%, #ec971f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffec971f', GradientType=0);
+  background-repeat: repeat-x;
+}
+.progress-bar-danger {
+  background-image: -webkit-linear-gradient(top, #d9534f 0%, #c9302c 100%);
+  background-image:      -o-linear-gradient(top, #d9534f 0%, #c9302c 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d9534f), to(#c9302c));
+  background-image:         linear-gradient(to bottom, #d9534f 0%, #c9302c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc9302c', GradientType=0);
+  background-repeat: repeat-x;
+}
+.progress-bar-striped {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.list-group {
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+}
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+  text-shadow: 0 -1px 0 #286090;
+  background-image: -webkit-linear-gradient(top, #337ab7 0%, #2b669a 100%);
+  background-image:      -o-linear-gradient(top, #337ab7 0%, #2b669a 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2b669a));
+  background-image:         linear-gradient(to bottom, #337ab7 0%, #2b669a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2b669a', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #2b669a;
+}
+.list-group-item.active .badge,
+.list-group-item.active:hover .badge,
+.list-group-item.active:focus .badge {
+  text-shadow: none;
+}
+.panel {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+}
+.panel-default > .panel-heading {
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+  background-image:      -o-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e8e8e8));
+  background-image:         linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+  background-repeat: repeat-x;
+}
+.panel-primary > .panel-heading {
+  background-image: -webkit-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
+  background-image:      -o-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2e6da4));
+  background-image:         linear-gradient(to bottom, #337ab7 0%, #2e6da4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
+  background-repeat: repeat-x;
+}
+.panel-success > .panel-heading {
+  background-image: -webkit-linear-gradient(top, #dff0d8 0%, #d0e9c6 100%);
+  background-image:      -o-linear-gradient(top, #dff0d8 0%, #d0e9c6 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dff0d8), to(#d0e9c6));
+  background-image:         linear-gradient(to bottom, #dff0d8 0%, #d0e9c6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffd0e9c6', GradientType=0);
+  background-repeat: repeat-x;
+}
+.panel-info > .panel-heading {
+  background-image: -webkit-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);
+  background-image:      -o-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(#c4e3f3));
+  background-image:         linear-gradient(to bottom, #d9edf7 0%, #c4e3f3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffc4e3f3', GradientType=0);
+  background-repeat: repeat-x;
+}
+.panel-warning > .panel-heading {
+  background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #faf2cc 100%);
+  background-image:      -o-linear-gradient(top, #fcf8e3 0%, #faf2cc 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf8e3), to(#faf2cc));
+  background-image:         linear-gradient(to bottom, #fcf8e3 0%, #faf2cc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fffaf2cc', GradientType=0);
+  background-repeat: repeat-x;
+}
+.panel-danger > .panel-heading {
+  background-image: -webkit-linear-gradient(top, #f2dede 0%, #ebcccc 100%);
+  background-image:      -o-linear-gradient(top, #f2dede 0%, #ebcccc 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2dede), to(#ebcccc));
+  background-image:         linear-gradient(to bottom, #f2dede 0%, #ebcccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffebcccc', GradientType=0);
+  background-repeat: repeat-x;
+}
+.well {
+  background-image: -webkit-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);
+  background-image:      -o-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e8e8e8), to(#f5f5f5));
+  background-image:         linear-gradient(to bottom, #e8e8e8 0%, #f5f5f5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8e8e8', endColorstr='#fff5f5f5', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #dcdcdc;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
+}
+/*# sourceMappingURL=bootstrap-theme.css.map */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -6774,3 +7376,3380 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 8, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 30, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 49, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 62, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 70, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 79, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 86, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 95, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 101, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 108, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 115, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 122, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 129, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 135, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 142, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 145, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 153, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 159, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 167, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 173, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 180, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 186, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 205, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 220, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 229, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. CUSTOM FOR WEBFLOW: Removed the input[type="submit"] selector to reduce
+ *    specificity and defer to the .w-button selector
+ */
+/* line 242, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button,
+html input[type="button"],
+input[type="reset"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 253, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 260, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 269, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 279, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 291, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 299, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 310, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 317, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 326, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 335, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 342, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 350, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 354, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+td,
+th {
+  padding: 0;
+}
+/* line 3, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.header-section {
+  padding-top: 0px;
+  background-color: #68635f;
+}
+
+/* line 8, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.flex-parent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+/* line 16, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.side-nav-div {
+  width: 200px;
+  border-right: 1px solid #ada5a5;
+  background-color: #ada5a5;
+}
+
+/* line 22, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.body-div {
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* line 31, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.search-div {
+  position: relative;
+  top: 9px;
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  margin-top: 0px;
+  margin-left: 100px;
+  border-radius: 11px;
+  background-color: #fff;
+}
+
+/* line 43, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.firm-logo {
+  margin-top: 0px;
+}
+
+/* line 47, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.nav-button-wrapper {
+  margin-top: 0px;
+  background-color: #fff;
+}
+
+/* line 52, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.nav-button {
+  width: 200px;
+  height: 60px;
+  background-color: transparent;
+  color: #68635f;
+  border-bottom: 1px solid #ada5a5;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* line 63, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.nav-button:hover {
+  background-color: #f37908;
+  color: #fff;
+}
+
+/* line 68, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.nav-button.last {
+  border-bottom: 1px solid #ada5a5;
+}
+
+/* line 72, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.nav-button-head {
+  position: static;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 14px;
+  border-top: 0px solid #ada5a5;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* line 86, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.client-dropdown {
+  display: inline-block;
+  margin-left: 55px;
+}
+
+/* line 91, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dropdown-parent {
+  position: absolute;
+  top: -10px;
+  bottom: 0px;
+  width: 200px;
+  height: 30px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+  background-color: #fff;
+  line-height: 11px;
+  text-align: center;
+}
+
+/* line 106, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dropdown-text {
+  margin-top: -11px;
+  margin-left: 20px;
+  font-size: 17px;
+}
+
+/* line 114, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dropdown-icon {
+  margin-top: 0px;
+}
+
+/* line 118, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.owner-info-div {
+  background-color: #ada5a5;
+}
+
+/* line 122, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.owner-info-nav {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 7px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 133, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.owner-info-nav.company {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 8px;
+  font-weight: 300;
+}
+
+/* line 141, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.header-icon-div {
+  display: inline-block;
+  width: 400px;
+  height: 35px;
+  margin-top: -2px;
+  margin-bottom: -14px;
+  margin-left: 473px;
+  padding-top: 0px;
+}
+
+/* line 151, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.header-icon-link-block {
+  margin-right: 30px;
+}
+
+/* line 155, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dashboard-staff-heading {
+  display: inline-block;
+  margin-bottom: 35px;
+  padding-left: 43px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+/* line 163, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.workflow-summary-div {
+  overflow: auto;
+  height: 350px;
+  margin: 0px 10px 10px 15px;
+  border: 1px solid #ada5a5;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+}
+
+/* line 173, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.workflow-summary-div.staff {
+  height: 300px;
+}
+
+/* line 177, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.internal-chat-div {
+  height: 350px;
+  margin: 0px 15px 10px 10px;
+  border: 1px solid #ada5a5;
+  border-radius: 0px 0px 5px 5px;
+}
+
+/* line 184, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.internal-chat-div.small {
+  display: inline-block;
+  width: 46%;
+  height: 300px;
+  margin-left: 10px;
+}
+
+/* line 191, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dashboard-title-div {
+  height: 33px;
+  margin-right: 15px;
+  margin-left: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #ada5a5;
+}
+
+/* line 200, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dashboard-title-div.workflow {
+  height: 33px;
+  margin-right: 10px;
+  margin-left: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #ada5a5;
+}
+
+/* line 209, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dashboard-title-div.small {
+  display: inline-block;
+  width: 46%;
+}
+
+/* line 214, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dashboard-div-title-header {
+  position: static;
+  display: inline-block;
+  overflow: visible;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 7px;
+  padding-bottom: 2px;
+  padding-left: 24px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #ada5a5;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+/* line 232, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dashboard-div-title-header.date-filter {
+  position: relative;
+  bottom: 0px;
+  display: inline-block;
+  padding-right: 22px;
+  float: right;
+  border-top-right-radius: 5px;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+/* line 243, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.workflow-header {
+  position: static;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin-top: 6px;
+  margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* line 258, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.workflow-header.data {
+  color: #000;
+  font-size: 12px;
+}
+
+/* line 263, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.workflow-header.data.notes {
+  color: #4d4deb;
+  text-decoration: underline;
+}
+
+/* line 268, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.workflow-header-row {
+  position: relative;
+  display: block;
+  height: 31px;
+  margin-top: 8px;
+  margin-left: 0px;
+  padding-left: 0px;
+  border-radius: 5px;
+  background-color: #44abf1;
+  text-align: center;
+}
+
+/* line 280, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.workflow-header-row.data-block {
+  height: 37px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #ada5a5;
+  border-radius: 0px;
+  background-color: transparent;
+  color: #000;
+}
+
+/* line 291, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.workflow-header-row.data-block:hover {
+  height: 37px;
+  margin-top: 0px;
+  background-color: #f0e8e8;
+}
+
+/* line 297, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.workflow-header-row.top {
+  margin-bottom: 7px;
+}
+
+/* line 301, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.workflow-head-wrapper {
+  display: block;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 3px;
+}
+
+/* line 309, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.new-client-button {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 32px;
+  float: right;
+  border-radius: 5px;
+  background-color: #44abf1;
+}
+
+/* line 318, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.new-task-button {
+  margin-top: 20px;
+  margin-right: 30px;
+  float: right;
+  border-radius: 5px;
+  background-color: #44abf1;
+}
+
+/* line 326, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.workflow-column-1 {
+  border-style: none solid none none;
+  border-width: 1px;
+  border-color: #ada5a5;
+}
+
+/* line 332, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dashboard-row-2 {
+  margin-top: 30px;
+}
+
+/* line 336, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.meeting-event-column {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 10px;
+  text-align: left;
+}
+
+@media (max-width: 991px) {
+  /* line 346, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+  .header-section {
+    height: 63px;
+    margin-bottom: 0px;
+  }
+
+  /* line 350, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+  .search-div {
+    position: static;
+    top: 3px;
+    display: none;
+  }
+
+  /* line 355, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+  .client-dropdown {
+    margin-left: 21px;
+  }
+
+  /* line 358, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+  .header-icon-div {
+    position: relative;
+    bottom: 45px;
+    width: 350px;
+    margin-top: 0px;
+    margin-bottom: -29px;
+    padding-bottom: 0px;
+  }
+
+  /* line 366, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+  .dashboard-staff-heading {
+    display: block;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  /* line 371, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+  .workflow-summary-div {
+    position: static;
+    display: block;
+    overflow: hidden;
+    margin-left: 10px;
+  }
+
+  /* line 377, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+  .internal-chat-div {
+    display: block;
+    overflow: visible;
+    margin-right: 10px;
+  }
+
+  /* line 382, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+  .dashboard-title-div {
+    margin-right: 10px;
+  }
+
+  /* line 385, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+  .dashboard-title-div.workflow {
+    margin-left: 10px;
+  }
+
+  /* line 388, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+  .dashboard-row-1 {
+    display: block;
+  }
+
+  /* line 391, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+  .workflow-header.data {
+    font-size: 10px;
+  }
+
+  /* line 394, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+  .new-client-button {
+    display: inline-block;
+    width: 40%;
+    margin: 0px auto 9px;
+    float: none;
+    text-align: center;
+  }
+
+  /* line 401, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+  .new-task-button {
+    display: inline-block;
+    width: 40%;
+    margin: 0px 53px 12px 27px;
+    float: none;
+    text-align: center;
+  }
+}
+/* line 410, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.nav-title {
+  color: #68635f;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 420, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.well-trans {
+  min-height: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* line 433, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.nav-title:hover {
+  text-decoration: none;
+  color: #fff;
+  background: none;
+}
+
+/* line 439, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.current_page {
+  color: #f37908;
+  text-decoration-style: bold;
+}
+
+/* line 444, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.row-under {
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 30px;
+}
+
+/* line 448, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+/* Dropdown Button */
+/* line 472, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dropbtn {
+  color: #000;
+  display: inline-block;
+  padding: 1px 6px;
+  margin-bottom: 8px;
+  margin-left: 25px;
+  margin-right: 5px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/* Dropdown button on hover & focus */
+/* line 498, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dropbtn:hover, .dropbtn:focus {
+  color: #fff;
+  background-color: #3291B5;
+}
+
+/* The container <div> - needed to position the dropdown content */
+/* line 504, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+/* line 511, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dropdown-content {
+  margin-top: 25px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside the dropdown */
+/* line 521, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+/* line 529, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/* line 532, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.show {
+  display: block;
+}
+
+/* line 535, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.well-danger {
+  color: #fff;
+  background: #B20000;
+}
+
+/* line 541, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.col-centered {
+  float: none;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* line 547, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.well-orange {
+  background: #ff8500;
+  padding-top: 125px;
+}
+
+/* line 553, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.phhead {
+  color: #fff;
+  margin-bottom: -30;
+}
+
+/* line 558, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.row-stats {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 563, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.row-stats2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 568, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.well-stats {
+  text-align: center;
+  background: none;
+  border-syle: solid;
+  border-color: #ff8500;
+  border-width: 1px;
+  padding: none;
+  margin: none;
+}
+
+/* line 578, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.bread-name {
+  margin-left: 20px;
+}
+
+/* line 582, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.btn-panel {
+  margin-top: 0px;
+}
+
+/* line 586, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.btn-pro {
+  color: #fff;
+  background: #fff8500;
+}
+
+/* line 591, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.linkto {
+  color: blue;
+}
+
+/* line 595, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.dropdown-client {
+  margin-left: 20px;
+  margin-right: 400px;
+}
+
+/* line 601, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.btn-client-dropdown {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* line 606, /home/ubuntu/workspace/app/assets/stylesheets/prohub-html.webflow.css.scss */
+.search-container {
+  margin-top: 10px;
+}
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #337ab7;
+}
+/* line 26, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #000;
+}
+
+/* line 33, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 56, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 67, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+@charset "UTF-8";
+@font-face {
+  font-family: 'webflow-icons';
+  src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg6SAy0AAAC8AAAAYGNtYXAaVcxaAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5ZgscV1gAAAFwAAABhGhlYWQCkFKvAAAC9AAAADZoaGVhB0MDyQAAAywAAAAkaG10eBIAA10AAANQAAAAIGxvY2EBMADyAAADcAAAABJtYXhwAAwATQAAA4QAAAAgbmFtZWTuiIAAAAOkAAABe3Bvc3QAAwAAAAAFIAAAACAAAwQAAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADmAwPA/8D/wAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIOYD//3//wAAAAAAIOYA//3//wAB/+MaBAADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQEgAAADIAOAAAUAAAkBBwkBFwMg/kBAAYD+gEABwAHAQP6A/oBAAAEA4AAAAuADgAAFAAATARcJAQfgAcBA/oABgEABwAHAQP6A/oBAAAADAMAA4ANAAsAAGAAxAEoAAAEhIg4CHQEUHgIzITI+Aj0BNC4CIxUhIg4CHQEUHgIzITI+Aj0BNC4CIxUhIg4CHQEUHgIzITI+Aj0BNC4CIwMg/cAHCwkFBQkLBwJABwsJBQUJCwf9wAcLCQUFCQsHAkAHCwkFBQkLB/3ABwsJBQUJCwcCQAcLCQUFCQsHAsAFCQsHIAcLCQUFCQsHIAcLCQXABQkLByAHCwkFBQkLByAHCwkFwAUJCwcgBwsJBQUJCwcgBwsJBQAAAAABAJ0AtAOBApUABQAACQIHCQEDJP7r/upcAXEBcgKU/usBFFv+egGGAAAAAAEAAAABAADSLAJOXw889QALBAAAAAAAz/iHGQAAAADP+IcZAAAAAAOBA4AAAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAAAAA4EAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAACAAAABAABIAQAAOAEAADABAAAnQAAAAAACgAUAB4AMgBGAKwAwgAAAAEAAAAIAEsAAwAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAaAAAAAQAAAAAAAgAOAHEAAQAAAAAAAwAaADAAAQAAAAAABAAaAH8AAQAAAAAABQAWABoAAQAAAAAABgANAEoAAQAAAAAACgA0AJkAAwABBAkAAQAaAAAAAwABBAkAAgAOAHEAAwABBAkAAwAaADAAAwABBAkABAAaAH8AAwABBAkABQAWABoAAwABBAkABgAaAFcAAwABBAkACgA0AJkAdwBlAGIAZgBsAG8AdwAtAGkAYwBvAG4AcwBWAGUAcgBzAGkAbwBuACAAMQAuADAAdwBlAGIAZgBsAG8AdwAtAGkAYwBvAG4Ac3dlYmZsb3ctaWNvbnMAdwBlAGIAZgBsAG8AdwAtAGkAYwBvAG4AcwBSAGUAZwB1AGwAYQByAHcAZQBiAGYAbABvAHcALQBpAGMAbwBuAHMARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format("truetype"), url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAVcAAoAAAAABRQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAZMAAAGTuzUomU9TLzIAAAKIAAAAYAAAAGAOkgMtY21hcAAAAugAAABMAAAATBpVzFpnYXNwAAADNAAAAAgAAAAIAAAAEGhlYWQAAAM8AAAANgAAADYCkFKvaGhlYQAAA3QAAAAkAAAAJAdDA8lobXR4AAADmAAAACAAAAAgEgADXW1heHAAAAO4AAAABgAAAAYACFAAbmFtZQAAA8AAAAF7AAABe2TuiIBwb3N0AAAFPAAAACAAAAAgAAMAAAEABAQAAQEBDndlYmZsb3ctaWNvbnMAAQIAAQA6+BwC+BsD+BgEHgoACXf/i4seCgAJd/+LiwwHi0v6lPpUBR0AAACaDx0AAACfER0AAAAJHQAAAYoSAAkBAQ4bHR8iJywxNndlYmZsb3ctaWNvbnN3ZWJmbG93LWljb25zdTB1MXUyMHVFNjAwdUU2MDF1RTYwMnVFNjAzAAACAYkABgAIAQEEBwoNJDvH4P6UDv6UDv6UDvyUDvm0+FQV/FT4VEtL+BT8FPwU/BTLSwUO93T4VBX4VPhUy0v8FPwU+BT8FEtLBQ75tPlUFfzUiwV5i319i3kIi2sFi3mZfZ2LCPjUiwWdi5mZi50Ii6sFi519mXmLCIv7VBX81IsFeYt9fYt5CItrBYt5mX2diwj41IsFnYuZmYudCIurBYudfZl5iwiL+1QV/NSLBXmLfX2LeQiLawWLeZl9nYsI+NSLBZ2LmZmLnQiLqwWLnX2ZeYsIDvm4+SkV+6n7qvuq96ovLvgG/Bj4BvgYBQ76lBT6lBWLDAoAAAMEAAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA5gMDwP/A/8ADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABAA4AAAACgAIAAIAAgABACDmA//9//8AAAAAACDmAP/9//8AAf/jGgQAAwABAAAAAAAAAAAAAAABAAH//wAPAAEAAAABAAC1pQTjXw889QALBAAAAAAAz/iHGQAAAADP+IcZAAAAAAOBA4AAAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAAAAA4EAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAACAAAABAABIAQAAOAEAADABAAAnQAAUAAACAAAAAAADgCuAAEAAAAAAAEAGgAAAAEAAAAAAAIADgBxAAEAAAAAAAMAGgAwAAEAAAAAAAQAGgB/AAEAAAAAAAUAFgAaAAEAAAAAAAYADQBKAAEAAAAAAAoANACZAAMAAQQJAAEAGgAAAAMAAQQJAAIADgBxAAMAAQQJAAMAGgAwAAMAAQQJAAQAGgB/AAMAAQQJAAUAFgAaAAMAAQQJAAYAGgBXAAMAAQQJAAoANACZAHcAZQBiAGYAbABvAHcALQBpAGMAbwBuAHMAVgBlAHIAcwBpAG8AbgAgADEALgAwAHcAZQBiAGYAbABvAHcALQBpAGMAbwBuAHN3ZWJmbG93LWljb25zAHcAZQBiAGYAbABvAHcALQBpAGMAbwBuAHMAUgBlAGcAdQBsAGEAcgB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 7, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+[class^="w-icon-"],
+[class*=" w-icon-"] {
+  font-family: 'webflow-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-icon-slider-right:before {
+  content: "\e600";
+}
+
+/* line 22, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-icon-slider-left:before {
+  content: "\e601";
+}
+
+/* line 25, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-icon-nav-menu:before {
+  content: "\e602";
+}
+
+/* line 28, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-icon-arrow-down:before,
+.w-icon-dropdown-toggle:before {
+  content: "\e603";
+}
+
+/* line 32, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 37, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+html {
+  height: 100%;
+}
+
+/* line 40, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+}
+
+/* line 49, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* line 54, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+html.w-mod-touch * {
+  background-attachment: scroll !important;
+}
+
+/* line 57, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-block {
+  display: block;
+}
+
+/* line 60, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* line 64, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-clearfix:before,
+.w-clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 69, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-clearfix:after {
+  clear: both;
+}
+
+/* line 72, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* line 75, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-hidden {
+  display: none;
+}
+
+/* line 78, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-button {
+  display: inline-block;
+  padding: 9px 15px;
+  background-color: #3898EC;
+  color: white;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+/* line 89, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+input.w-button {
+  -webkit-appearance: button;
+}
+
+/* line 95, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+html[data-w-dynpage] [data-w-cloak] {
+  color: transparent !important;
+}
+
+/* line 98, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* line 107, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+h1 {
+  font-size: 38px;
+  line-height: 44px;
+  margin-top: 20px;
+}
+
+/* line 112, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* line 118, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+
+/* line 124, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+h4 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+/* line 130, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+/* line 137, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+h6 {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 15px;
+  margin-top: 2px;
+}
+
+/* line 143, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 147, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+a:focus {
+  outline: 0;
+}
+
+/* line 150, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+blockquote {
+  margin: 0 0 10px 0;
+  padding: 10px 20px;
+  border-left: 5px solid #E2E2E2;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* line 157, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+figure {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* line 161, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+figcaption {
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* line 165, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+ul,
+ol {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+
+/* line 171, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 175, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-embed:before,
+.w-embed:after {
+  content: " ";
+  display: table;
+}
+
+/* line 180, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-embed:after {
+  clear: both;
+}
+
+/* line 183, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-video {
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+
+/* line 188, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-video iframe,
+.w-video object,
+.w-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 197, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* line 202, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+button,
+html input[type="button"],
+input[type="reset"] {
+  border: 0;
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/* line 209, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-form {
+  margin: 0 0 15px;
+}
+
+/* line 212, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-form-done {
+  display: none;
+  padding: 20px;
+  text-align: center;
+  background-color: #dddddd;
+}
+
+/* line 218, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-form-fail {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ffdede;
+}
+
+/* line 224, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* line 229, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-input,
+.w-select {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+/* line 243, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-input:-moz-placeholder,
+.w-select:-moz-placeholder {
+  color: #999;
+}
+
+/* line 247, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-input::-moz-placeholder,
+.w-select::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+/* line 252, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-input:-ms-input-placeholder,
+.w-select:-ms-input-placeholder {
+  color: #999;
+}
+
+/* line 256, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-input::-webkit-input-placeholder,
+.w-select::-webkit-input-placeholder {
+  color: #999;
+}
+
+/* line 260, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-input:focus,
+.w-select:focus {
+  border-color: #3898EC;
+  outline: 0;
+}
+
+/* line 265, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-input[disabled],
+.w-select[disabled],
+.w-input[readonly],
+.w-select[readonly],
+fieldset[disabled] .w-input,
+fieldset[disabled] .w-select {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+
+/* line 274, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+textarea.w-input,
+textarea.w-select {
+  height: auto;
+}
+
+/* line 278, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-select {
+  background-image: -webkit-linear-gradient(white 0%, #f3f3f3 100%);
+  background-image: linear-gradient(white 0%, #f3f3f3 100%);
+}
+
+/* line 282, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-select[multiple] {
+  height: auto;
+}
+
+/* line 285, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-form-label {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+/* line 291, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-checkbox,
+.w-radio {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+/* line 297, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-checkbox:before,
+.w-radio:before,
+.w-checkbox:after,
+.w-radio:after {
+  content: " ";
+  display: table;
+}
+
+/* line 304, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-checkbox:after,
+.w-radio:after {
+  clear: both;
+}
+
+/* line 308, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-checkbox-input,
+.w-radio-input {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+  float: left;
+  margin-left: -20px;
+}
+
+/* line 316, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-radio-input {
+  margin-top: 3px;
+}
+
+/* line 319, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+}
+
+/* line 324, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-container:before,
+.w-container:after {
+  content: " ";
+  display: table;
+}
+
+/* line 329, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-container:after {
+  clear: both;
+}
+
+/* line 332, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-container .w-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/* line 336, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-row:before,
+.w-row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 341, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-row:after {
+  clear: both;
+}
+
+/* line 344, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-row .w-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 348, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-col {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 356, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-col .w-col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 360, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-col-1 {
+  width: 8.33333333%;
+}
+
+/* line 363, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-col-2 {
+  width: 16.66666667%;
+}
+
+/* line 366, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-col-3 {
+  width: 25%;
+}
+
+/* line 369, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-col-4 {
+  width: 33.33333333%;
+}
+
+/* line 372, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-col-5 {
+  width: 41.66666667%;
+}
+
+/* line 375, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-col-6 {
+  width: 50%;
+}
+
+/* line 378, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-col-7 {
+  width: 58.33333333%;
+}
+
+/* line 381, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-col-8 {
+  width: 66.66666667%;
+}
+
+/* line 384, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-col-9 {
+  width: 75%;
+}
+
+/* line 387, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-col-10 {
+  width: 83.33333333%;
+}
+
+/* line 390, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-col-11 {
+  width: 91.66666667%;
+}
+
+/* line 393, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-col-12 {
+  width: 100%;
+}
+
+/* line 396, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-hidden-main {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 400, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-container {
+    max-width: 728px;
+  }
+
+  /* line 403, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-hidden-main {
+    display: inherit !important;
+  }
+
+  /* line 406, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-hidden-medium {
+    display: none !important;
+  }
+
+  /* line 409, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-medium-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 412, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-medium-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 415, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-medium-3 {
+    width: 25%;
+  }
+
+  /* line 418, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-medium-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 421, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-medium-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 424, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-medium-6 {
+    width: 50%;
+  }
+
+  /* line 427, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-medium-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 430, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-medium-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 433, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-medium-9 {
+    width: 75%;
+  }
+
+  /* line 436, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-medium-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 439, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-medium-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 442, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-medium-12 {
+    width: 100%;
+  }
+
+  /* line 445, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-stack {
+    width: 100%;
+    left: auto;
+    right: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 452, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-hidden-main {
+    display: inherit !important;
+  }
+
+  /* line 455, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-hidden-medium {
+    display: inherit !important;
+  }
+
+  /* line 458, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-hidden-small {
+    display: none !important;
+  }
+
+  /* line 461, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-row,
+  .w-container .w-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 466, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col {
+    width: 100%;
+    left: auto;
+    right: auto;
+  }
+
+  /* line 471, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-small-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 474, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-small-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 477, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-small-3 {
+    width: 25%;
+  }
+
+  /* line 480, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-small-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 483, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-small-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 486, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-small-6 {
+    width: 50%;
+  }
+
+  /* line 489, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-small-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 492, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-small-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 495, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-small-9 {
+    width: 75%;
+  }
+
+  /* line 498, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-small-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 501, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-small-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 504, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-small-12 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 479px) {
+  /* line 509, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-container {
+    max-width: none;
+  }
+
+  /* line 512, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-hidden-main {
+    display: inherit !important;
+  }
+
+  /* line 515, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-hidden-medium {
+    display: inherit !important;
+  }
+
+  /* line 518, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-hidden-small {
+    display: inherit !important;
+  }
+
+  /* line 521, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-hidden-tiny {
+    display: none !important;
+  }
+
+  /* line 524, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col {
+    width: 100%;
+  }
+
+  /* line 527, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-tiny-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 530, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-tiny-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 533, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-tiny-3 {
+    width: 25%;
+  }
+
+  /* line 536, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-tiny-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 539, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-tiny-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 542, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-tiny-6 {
+    width: 50%;
+  }
+
+  /* line 545, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-tiny-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 548, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-tiny-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 551, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-tiny-9 {
+    width: 75%;
+  }
+
+  /* line 554, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-tiny-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 557, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-tiny-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 560, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-col-tiny-12 {
+    width: 100%;
+  }
+}
+/* line 564, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget {
+  position: relative;
+}
+
+/* line 567, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-map {
+  width: 100%;
+  height: 400px;
+}
+
+/* line 571, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-map label {
+  width: auto;
+  display: inline;
+}
+
+/* line 575, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-map img {
+  max-width: inherit;
+}
+
+/* line 578, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-map .gm-style-iw {
+  width: 90% !important;
+  height: auto !important;
+  top: 7px !important;
+  left: 6% !important;
+  display: inline;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 587, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-map .gm-style-iw + div {
+  display: none;
+}
+
+/* line 590, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter {
+  overflow: hidden;
+}
+
+/* line 593, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 28px;
+  height: 20px;
+  text-align: center;
+  background: white;
+  border: #758696 solid 1px;
+  border-radius: 3px;
+}
+
+/* line 604, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim * {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 611, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim .w-widget-twitter-count-inner {
+  position: relative;
+  font-size: 15px;
+  line-height: 12px;
+  text-align: center;
+  color: #999;
+  font-family: serif;
+}
+
+/* line 619, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim .w-widget-twitter-count-clear {
+  position: relative;
+  display: block;
+}
+
+/* line 623, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim.w--large {
+  width: 36px;
+  height: 28px;
+  margin-left: 7px;
+}
+
+/* line 628, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim.w--large .w-widget-twitter-count-inner {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+/* line 632, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim:not(.w--vertical) {
+  margin-left: 5px;
+  margin-right: 8px;
+}
+
+/* line 636, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim:not(.w--vertical).w--large {
+  margin-left: 6px;
+}
+
+/* line 639, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim:not(.w--vertical):before,
+.w-widget-twitter-count-shim:not(.w--vertical):after {
+  top: 50%;
+  left: 0;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 650, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim:not(.w--vertical):before {
+  border-color: rgba(117, 134, 150, 0);
+  border-right-color: #5d6c7b;
+  border-width: 4px;
+  margin-left: -9px;
+  margin-top: -4px;
+}
+
+/* line 657, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim:not(.w--vertical).w--large:before {
+  border-width: 5px;
+  margin-left: -10px;
+  margin-top: -5px;
+}
+
+/* line 662, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim:not(.w--vertical):after {
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: white;
+  border-width: 4px;
+  margin-left: -8px;
+  margin-top: -4px;
+}
+
+/* line 669, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim:not(.w--vertical).w--large:after {
+  border-width: 5px;
+  margin-left: -9px;
+  margin-top: -5px;
+}
+
+/* line 674, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim.w--vertical {
+  width: 61px;
+  height: 33px;
+  margin-bottom: 8px;
+}
+
+/* line 679, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim.w--vertical:before,
+.w-widget-twitter-count-shim.w--vertical:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 690, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim.w--vertical:before {
+  border-color: rgba(117, 134, 150, 0);
+  border-top-color: #5d6c7b;
+  border-width: 5px;
+  margin-left: -5px;
+}
+
+/* line 696, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim.w--vertical:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: white;
+  border-width: 4px;
+  margin-left: -4px;
+}
+
+/* line 702, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim.w--vertical .w-widget-twitter-count-inner {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* line 706, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-twitter-count-shim.w--vertical.w--large {
+  width: 76px;
+}
+
+/* line 709, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-widget-gplus {
+  overflow: hidden;
+}
+
+/* line 712, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-background-video {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  color: white;
+}
+
+/* line 718, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-background-video > video {
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  right: -100%;
+  bottom: -100%;
+  top: -100%;
+  left: -100%;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+/* line 731, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider {
+  position: relative;
+  height: 300px;
+  text-align: center;
+  background: #dddddd;
+  clear: both;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+/* line 740, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider-mask {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  height: 100%;
+  white-space: nowrap;
+}
+
+/* line 750, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slide {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  white-space: normal;
+  text-align: left;
+}
+
+/* line 759, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider-nav {
+  position: absolute;
+  z-index: 2;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding-top: 10px;
+  height: 40px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+/* line 773, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider-nav.w-round > div {
+  border-radius: 100%;
+}
+
+/* line 776, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider-nav.w-num > div {
+  width: auto;
+  height: auto;
+  padding: 0.2em 0.5em;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 783, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider-nav.w-shadow > div {
+  box-shadow: 0 0 3px rgba(51, 51, 51, 0.4);
+}
+
+/* line 786, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider-nav-invert {
+  color: #fff;
+}
+
+/* line 789, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider-nav-invert > div {
+  background-color: rgba(34, 34, 34, 0.4);
+}
+
+/* line 792, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider-nav-invert > div.w-active {
+  background-color: #222;
+}
+
+/* line 795, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider-dot {
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  margin: 0 3px 0.5em;
+  transition: background-color 100ms, color 100ms;
+}
+
+/* line 805, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider-dot.w-active {
+  background-color: #fff;
+}
+
+/* line 808, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider-arrow-left,
+.w-slider-arrow-right {
+  position: absolute;
+  width: 80px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  cursor: pointer;
+  overflow: hidden;
+  color: white;
+  font-size: 40px;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 828, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider-arrow-left [class^="w-icon-"],
+.w-slider-arrow-right [class^="w-icon-"],
+.w-slider-arrow-left [class*=" w-icon-"],
+.w-slider-arrow-right [class*=" w-icon-"] {
+  position: absolute;
+}
+
+/* line 834, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider-arrow-left {
+  z-index: 3;
+  right: auto;
+}
+
+/* line 838, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-slider-arrow-right {
+  z-index: 4;
+  left: auto;
+}
+
+/* line 842, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-icon-slider-left,
+.w-icon-slider-right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 1em;
+  height: 1em;
+}
+
+/* line 852, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-dropdown {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 900;
+}
+
+/* line 860, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  position: relative;
+  vertical-align: top;
+  text-decoration: none;
+  color: #222222;
+  padding: 20px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+}
+
+/* line 873, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-dropdown-toggle {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+  cursor: pointer;
+  padding-right: 40px;
+}
+
+/* line 882, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-dropdown-toggle:focus {
+  outline: 0;
+}
+
+/* line 885, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-icon-dropdown-toggle {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  margin-right: 20px;
+  width: 1em;
+  height: 1em;
+}
+
+/* line 895, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-dropdown-list {
+  position: absolute;
+  background: #dddddd;
+  display: none;
+  min-width: 100%;
+}
+
+/* line 901, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-dropdown-list.w--open {
+  display: block;
+}
+
+/* line 904, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-dropdown-link {
+  padding: 10px 20px;
+  display: block;
+  color: #222222;
+}
+
+/* line 909, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-dropdown-link.w--current {
+  color: #0082f3;
+}
+
+/* line 912, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav[data-collapse="all"] .w-dropdown,
+.w-nav[data-collapse="all"] .w-dropdown-toggle {
+  display: block;
+}
+
+/* line 916, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav[data-collapse="all"] .w-dropdown-list {
+  position: static;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 920, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-nav[data-collapse="medium"] .w-dropdown,
+  .w-nav[data-collapse="medium"] .w-dropdown-toggle {
+    display: block;
+  }
+
+  /* line 924, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-nav[data-collapse="medium"] .w-dropdown-list {
+    position: static;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 929, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-nav[data-collapse="small"] .w-dropdown,
+  .w-nav[data-collapse="small"] .w-dropdown-toggle {
+    display: block;
+  }
+
+  /* line 933, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-nav[data-collapse="small"] .w-dropdown-list {
+    position: static;
+  }
+
+  /* line 936, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-nav-brand {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 479px) {
+  /* line 941, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-nav[data-collapse="tiny"] .w-dropdown,
+  .w-nav[data-collapse="tiny"] .w-dropdown-toggle {
+    display: block;
+  }
+
+  /* line 945, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-nav[data-collapse="tiny"] .w-dropdown-list {
+    position: static;
+  }
+}
+/**
+ * ## Note
+ * Safari (on both iOS and OS X) does not handle viewport units (vh, vw) well.
+ * For example percentage units do not work on descendants of elements that
+ * have any dimensions expressed in viewport units. It also doesn’t handle them at
+ * all in `calc()`.
+ */
+/**
+ * Wrapper around all lightbox elements
+ *
+ * 1. Since the lightbox can receive focus, IE also gives it an outline.
+ * 2. Fixes flickering on Chrome when a transition is in progress
+ *    underneath the lightbox.
+ */
+/* line 963, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-backdrop {
+  color: #000;
+  cursor: auto;
+  font-family: serif;
+  font-size: medium;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  list-style: disc;
+  text-align: start;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  visibility: visible;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Ubuntu, "Segoe UI", Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 300;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 2000;
+  outline: 0;
+  /* 1 */
+  opacity: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform: translate(0, 0);
+  /* 2 */
+}
+
+/**
+ * Neat trick to bind the rubberband effect to our canvas instead of the whole
+ * document on iOS. It also prevents a bug that causes the document underneath to scroll.
+ */
+/* line 1010, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-backdrop,
+.w-lightbox-container {
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 1016, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-content {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* line 1021, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-view {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+}
+
+/* line 1027, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-view:before {
+  content: "";
+  height: 100vh;
+}
+
+/* .w-lightbox-content */
+/* line 1032, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-group,
+.w-lightbox-group .w-lightbox-view,
+.w-lightbox-group .w-lightbox-view:before {
+  height: 86vh;
+}
+
+/* line 1037, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-frame,
+.w-lightbox-view:before {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*
+ * 1. Remove default margin set by user-agent on the <figure> element.
+ */
+/* line 1045, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-figure {
+  position: relative;
+  margin: 0;
+  /* 1 */
+}
+
+/* line 1050, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-group .w-lightbox-figure {
+  cursor: pointer;
+}
+
+/**
+ * IE adds image dimensions as width and height attributes on the IMG tag,
+ * but we need both width and height to be set to auto to enable scaling.
+ */
+/* line 1057, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-img {
+  width: auto;
+  height: auto;
+  max-width: none;
+}
+
+/**
+ * 1. Reset if style is set by user on "All Images"
+ */
+/* line 1065, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-image {
+  display: block;
+  float: none;
+  /* 1 */
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+/* line 1072, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-group .w-lightbox-image {
+  max-height: 86vh;
+}
+
+/* line 1075, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: .5em 1em;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 1087, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-embed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1096, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-control {
+  position: absolute;
+  top: 0;
+  width: 4em;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+/* line 1107, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-left {
+  display: none;
+  bottom: 0;
+  left: 0;
+  /* <svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 0 24 40" width="24" height="40"><g transform="rotate(45)"><path d="m0 0h5v23h23v5h-28z" opacity=".4"/><path d="m1 1h3v23h23v3h-26z" fill="#fff"/></g></svg> */
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yMCAwIDI0IDQwIiB3aWR0aD0iMjQiIGhlaWdodD0iNDAiPjxnIHRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHBhdGggZD0ibTAgMGg1djIzaDIzdjVoLTI4eiIgb3BhY2l0eT0iLjQiLz48cGF0aCBkPSJtMSAxaDN2MjNoMjN2M2gtMjZ6IiBmaWxsPSIjZmZmIi8+PC9nPjwvc3ZnPg==");
+}
+
+/* line 1114, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-right {
+  display: none;
+  right: 0;
+  bottom: 0;
+  /* <svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 0 24 40" width="24" height="40"><g transform="rotate(45)"><path d="m0-0h28v28h-5v-23h-23z" opacity=".4"/><path d="m1 1h26v26h-3v-23h-23z" fill="#fff"/></g></svg> */
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii00IDAgMjQgNDAiIHdpZHRoPSIyNCIgaGVpZ2h0PSI0MCI+PGcgdHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJtMC0waDI4djI4aC01di0yM2gtMjN6IiBvcGFjaXR5PSIuNCIvPjxwYXRoIGQ9Im0xIDFoMjZ2MjZoLTN2LTIzaC0yM3oiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+");
+}
+
+/*
+ * Without specifying the with and height inside the SVG, all versions of IE render the icon too small.
+ * The bug does not seem to manifest itself if the elements are tall enough such as the above arrows.
+ * (http://stackoverflow.com/questions/16092114/background-size-differs-in-internet-explorer)
+ */
+/* line 1126, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-close {
+  right: 0;
+  height: 2.6em;
+  /* <svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 0 18 17" width="18" height="17"><g transform="rotate(45)"><path d="m0 0h7v-7h5v7h7v5h-7v7h-5v-7h-7z" opacity=".4"/><path d="m1 1h7v-7h3v7h7v3h-7v7h-3v-7h-7z" fill="#fff"/></g></svg> */
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii00IDAgMTggMTciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyI+PGcgdHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJtMCAwaDd2LTdoNXY3aDd2NWgtN3Y3aC01di03aC03eiIgb3BhY2l0eT0iLjQiLz48cGF0aCBkPSJtMSAxaDd2LTdoM3Y3aDd2M2gtN3Y3aC0zdi03aC03eiIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4=");
+  background-size: 18px;
+}
+
+/**
+ * 1. All IE versions add extra space at the bottom without this.
+ */
+/* line 1136, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-strip {
+  padding: 0 1vh;
+  line-height: 0;
+  /* 1 */
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/*
+ * 1. We use content-box to avoid having to do `width: calc(10vh + 2vw)`
+ *    which doesn’t work in Safari anyway.
+ * 2. Chrome renders images pixelated when switching to GPU. Making sure
+ *    the parent is also rendered on the GPU (by setting translate3d for
+ *    example) fixes this behavior.
+ */
+/* line 1151, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-item {
+  display: inline-block;
+  width: 10vh;
+  padding: 2vh 1vh;
+  box-sizing: content-box;
+  /* 1 */
+  cursor: pointer;
+  -webkit-transform: translate3d(0, 0, 0);
+  /* 2 */
+}
+
+/* line 1161, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-active {
+  opacity: .3;
+}
+
+/* line 1164, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-thumbnail {
+  position: relative;
+  height: 10vh;
+  background: #222;
+  overflow: hidden;
+}
+
+/* line 1170, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-thumbnail-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 1175, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-thumbnail .w-lightbox-tall {
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+/* line 1182, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-thumbnail .w-lightbox-wide {
+  left: 50%;
+  height: 100%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+/*
+ * Spinner
+ *
+ * Absolute pixel values are used to avoid rounding errors that would cause
+ * the white spinning element to be misaligned with the track.
+ */
+/* line 1195, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: -20px;
+  border: 5px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  -webkit-animation: spin .8s infinite linear;
+  animation: spin .8s infinite linear;
+}
+
+/* line 1209, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-spinner:after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  border: 3px solid transparent;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+}
+
+/*
+ * Utility classes
+ */
+/* line 1223, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-hide {
+  display: none;
+}
+
+/* line 1226, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-noscroll {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  /* line 1230, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-lightbox-content {
+    height: 96vh;
+    margin-top: 2vh;
+  }
+
+  /* line 1234, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-lightbox-view,
+  .w-lightbox-view:before {
+    height: 96vh;
+  }
+
+  /* .w-lightbox-content */
+  /* line 1239, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-lightbox-group,
+  .w-lightbox-group .w-lightbox-view,
+  .w-lightbox-group .w-lightbox-view:before {
+    height: 84vh;
+  }
+
+  /* line 1244, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-lightbox-image {
+    max-width: 96vw;
+    max-height: 96vh;
+  }
+
+  /* line 1248, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-lightbox-group .w-lightbox-image {
+    max-width: 82.3vw;
+    max-height: 84vh;
+  }
+
+  /* line 1252, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-lightbox-left,
+  .w-lightbox-right {
+    display: block;
+    opacity: .5;
+  }
+
+  /* line 1257, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-lightbox-close {
+    opacity: .8;
+  }
+
+  /* line 1260, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-lightbox-control:hover {
+    opacity: 1;
+  }
+}
+/* line 1264, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-lightbox-inactive,
+.w-lightbox-inactive:hover {
+  opacity: 0;
+}
+
+/* line 1268, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext:before,
+.w-richtext:after {
+  content: " ";
+  display: table;
+}
+
+/* line 1273, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext:after {
+  clear: both;
+}
+
+/* line 1276, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext ol,
+.w-richtext ul {
+  overflow: hidden;
+}
+
+/* line 1280, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext .w-richtext-figure-selected[data-rt-type="video"] div:before {
+  outline: 2px solid #2895f7;
+}
+
+/* line 1283, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext .w-richtext-figure-selected[data-rt-type="image"] div {
+  outline: 2px solid #2895f7;
+}
+
+/* line 1286, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure[data-rt-type="video"] > div:before {
+  content: '';
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* line 1296, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure {
+  position: relative;
+  max-width: 60%;
+}
+
+/* line 1300, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure > div:before,
+.w-richtext figure img {
+  cursor: default !important;
+}
+
+/* line 1304, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure img {
+  width: 100%;
+}
+
+/* line 1307, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure figcaption.w-richtext-figcaption-placeholder {
+  opacity: 0.6;
+}
+
+/* line 1310, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure div {
+  /* fix incorrectly sized selection border in the data manager */
+  font-size: 0px;
+  color: transparent;
+}
+
+/* line 1315, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure[data-rt-type="image"] {
+  display: table;
+}
+
+/* line 1318, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure[data-rt-type="image"] > div {
+  display: inline-block;
+}
+
+/* line 1321, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure[data-rt-type="image"] > figcaption {
+  display: table-caption;
+  caption-side: bottom;
+}
+
+/* line 1325, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure[data-rt-type="video"] {
+  width: 60%;
+  height: 0;
+}
+
+/* line 1329, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure[data-rt-type="video"] iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1336, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure[data-rt-type="video"] > div {
+  width: 100%;
+}
+
+/* line 1339, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure.w-richtext-align-center {
+  margin-right: auto;
+  margin-left: auto;
+  clear: both;
+}
+
+/* line 1344, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure.w-richtext-align-center[data-rt-type="image"] > div {
+  max-width: 100%;
+}
+
+/* line 1347, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure.w-richtext-align-normal {
+  clear: both;
+}
+
+/* line 1350, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure.w-richtext-align-fullwidth {
+  width: 100%;
+  text-align: center;
+  clear: both;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 1358, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure.w-richtext-align-fullwidth > div {
+  display: inline-block;
+  /* padding-bottom is used for aspect ratios in video figures
+      we want the div to inherit that so hover/selection borders in the designer-canvas
+      fit right*/
+  padding-bottom: inherit;
+}
+
+/* line 1365, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure.w-richtext-align-fullwidth > figcaption {
+  display: block;
+}
+
+/* line 1368, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure.w-richtext-align-floatleft {
+  float: left;
+  margin-right: 15px;
+  clear: none;
+}
+
+/* line 1373, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-richtext figure.w-richtext-align-floatright {
+  float: right;
+  margin-left: 15px;
+  clear: none;
+}
+
+/* line 1378, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav {
+  position: relative;
+  background: #dddddd;
+  z-index: 1000;
+}
+
+/* line 1383, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav:before,
+.w-nav:after {
+  content: " ";
+  display: table;
+}
+
+/* line 1388, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav:after {
+  clear: both;
+}
+
+/* line 1391, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav-brand {
+  position: relative;
+  float: left;
+  text-decoration: none;
+  color: #333333;
+}
+
+/* line 1397, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: #222222;
+  padding: 20px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1408, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav-link.w--current {
+  color: #0082f3;
+}
+
+/* line 1411, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav-menu {
+  position: relative;
+  float: right;
+}
+
+/* line 1415, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w--nav-menu-open {
+  display: block !important;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #C8C8C8;
+  text-align: center;
+  overflow: visible;
+  min-width: 200px;
+}
+
+/* line 1426, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w--nav-link-open {
+  display: block;
+  position: relative;
+}
+
+/* line 1430, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav-overlay {
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* line 1439, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav-overlay .w--nav-menu-open {
+  top: 0;
+}
+
+/* line 1442, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav[data-animation="over-left"] .w-nav-overlay {
+  width: auto;
+}
+
+/* line 1445, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav[data-animation="over-left"] .w-nav-overlay,
+.w-nav[data-animation="over-left"] .w--nav-menu-open {
+  right: auto;
+  z-index: 1;
+  top: 0;
+}
+
+/* line 1451, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav[data-animation="over-right"] .w-nav-overlay {
+  width: auto;
+}
+
+/* line 1454, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav[data-animation="over-right"] .w-nav-overlay,
+.w-nav[data-animation="over-right"] .w--nav-menu-open {
+  left: auto;
+  z-index: 1;
+  top: 0;
+}
+
+/* line 1460, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav-button {
+  position: relative;
+  float: right;
+  padding: 18px;
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 1474, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav-button.w--open {
+  background-color: #C8C8C8;
+  color: white;
+}
+
+/* line 1478, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav[data-collapse="all"] .w-nav-menu {
+  display: none;
+}
+
+/* line 1481, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-nav[data-collapse="all"] .w-nav-button {
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 1485, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-nav[data-collapse="medium"] .w-nav-menu {
+    display: none;
+  }
+
+  /* line 1488, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-nav[data-collapse="medium"] .w-nav-button {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 1493, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-nav[data-collapse="small"] .w-nav-menu {
+    display: none;
+  }
+
+  /* line 1496, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-nav[data-collapse="small"] .w-nav-button {
+    display: block;
+  }
+
+  /* line 1499, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-nav-brand {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 479px) {
+  /* line 1504, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-nav[data-collapse="tiny"] .w-nav-menu {
+    display: none;
+  }
+
+  /* line 1507, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-nav[data-collapse="tiny"] .w-nav-button {
+    display: block;
+  }
+}
+/* line 1511, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-tabs {
+  position: relative;
+}
+
+/* line 1514, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-tabs:before,
+.w-tabs:after {
+  content: " ";
+  display: table;
+}
+
+/* line 1519, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-tabs:after {
+  clear: both;
+}
+
+/* line 1522, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-tab-menu {
+  position: relative;
+}
+
+/* line 1525, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-tab-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  padding: 9px 30px;
+  text-align: left;
+  cursor: pointer;
+  color: #222222;
+  background-color: #dddddd;
+}
+
+/* line 1536, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-tab-link.w--current {
+  background-color: #C8C8C8;
+}
+
+/* line 1539, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-tab-content {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 1544, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-tab-pane {
+  position: relative;
+  display: none;
+}
+
+/* line 1548, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w--tab-active {
+  display: block;
+}
+
+@media screen and (max-width: 479px) {
+  /* line 1552, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+  .w-tab-link {
+    display: block;
+  }
+}
+/* line 1556, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-ix-emptyfix:after {
+  content: "";
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* line 1567, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-dyn-empty {
+  padding: 10px;
+  background-color: #dddddd;
+}
+
+/* line 1571, /home/ubuntu/workspace/app/assets/stylesheets/webflow.css.scss */
+.w-condition-invisible {
+  display: none !important;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
+
+

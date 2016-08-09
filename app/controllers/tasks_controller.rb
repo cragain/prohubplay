@@ -6,6 +6,7 @@ class TasksController < ApplicationController
   def index
     @search = Task.ransack(params[:q])
     @task = @search.result
+    
   end
   
   def show
