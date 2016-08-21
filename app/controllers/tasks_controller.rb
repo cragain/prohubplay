@@ -5,6 +5,7 @@ class TasksController < ApplicationController
   
   def index
     @search = Task.ransack(params[:q])
+    @search.sorts = 'task_due asc' if @search.sorts.empty?
     @task = @search.result
     
   end
