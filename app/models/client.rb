@@ -26,8 +26,9 @@ class Client < ActiveRecord::Base
       Task.create(:task_name => "Weekly Bookkeeping", :task_frequency => "Books Weekly", :client_id => self.id, :task_due => Time.now, :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Every Week', :project_size => 1)
     elsif bookkeeping_schedule == 'Monthly'
       Task.create(:task_name => "Monthly Bookkeeping", :task_frequency => "Books Monthly", :client_id => self.id, :task_due => Time.now, :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Week 1', :project_size => 1)
-    else
+    elsif bookkeeping_schedule == "Quarterly"
       Task.create(:task_name => "Quarterly Bookkeeping", :task_frequency => "Books Quarterly", :client_id => self.id, :task_due => Time.now, :task_status => 'Not Started', :task_assigned_to => 'No User', :staff_accountant => 'N/A', :reviewer => 'N/A', :schedule => 'Quarterly', :project_size => 1)
+    else
     end
   end
   

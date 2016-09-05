@@ -54,7 +54,10 @@ class Task < ActiveRecord::Base
     elsif task_frequency == 'Payroll Bi-Weekly' 
       Date.today + 14.days
     elsif task_frequency == 'Payroll Monthly' 
-      Date.today + 1.month 
+      Date.today + 1.month
+    elsif task_frequency == 'Sales Tax Monthly'
+      self.task_due + 1.month
+        
     else 
     end
   end 
