@@ -8,7 +8,7 @@
   <div class="col-md-6">
   <%= t.input :task_frequency, :collection => ['Books Weekly', 'Books Monthly', 'Books Quarterly', 'Tax Annual', 'Payroll Bi-Weekly', 'Payroll Monthly'] %>
   <%= t.input :task_due %>
-  <%= t.input :project_size, :collection => [15, 30, 60, 90, 120, 180, 240 ], required: true %>
+  <%= t.input :project_size, :collection => [5, 10, 15, 30, 60, 90, 120, 180, 240 ], required: true %>
   </div>
   <%= t.button :submit, class: "btn-primary" %>
 </div>
