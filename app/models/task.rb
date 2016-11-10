@@ -57,6 +57,8 @@ class Task < ActiveRecord::Base
       Date.today + 1.month
     elsif task_frequency == 'Sales Tax Monthly'
       self.task_due + 1.month
+    elsif task_frequency == 'Monthly Task'
+      self.task_due + 1.month
         
     else 
     end

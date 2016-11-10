@@ -3,7 +3,7 @@
   <div class="col-md-6">
    <%= t.input :task_name, required: true %>
   <%= t.input :task_due, required: true %>
-  <%= t.input :task_frequency, :collection => ['Books Weekly', 'Books Monthly', 'Books Quarterly', 'Tax Annual', 'Payroll Bi-Weekly', 'Payroll Monthly', 'Sales Tax Monthly', 'Meeting', 'Other'], required: true %>
+  <%= t.input :task_frequency, :collection => ['Books Weekly', 'Books Monthly', 'Books Quarterly', 'Tax Annual', 'Payroll Bi-Weekly', 'Payroll Monthly', 'Sales Tax Monthly', 'Monthly Task', 'Meeting', 'Other'], required: true %>
   <%= t.association :client, label_method: :client_name, required: true %>
   <%= t.input :task_status, :collection => ['Not Started', 'Books-ready for review', 'Books-clear review pts', 'Tax-info received', 'Tax-ready for review', 'Tax-clear points', 'Tax-send 8879', 'Tax-ready to bill'], required: true %>
   <%= t.input :project_size, :collection => [5, 10, 15, 30, 60, 90, 120, 180, 240 ], required: true %>
